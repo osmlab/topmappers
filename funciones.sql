@@ -97,11 +97,20 @@ END;
 $$ LANGUAGE plpgsql;
 
 --TEST
-select fill_data(56666,100600);
+select fill_data(1,500000);
+select fill_data(500001,1000000);
+select fill_data(1000001,1500000);
+select fill_data(1500001,2000000);
+select fill_data(2000001,2500000);
+select fill_data(2500001,3000000);
+select fill_data(3000001,3500000);
+select fill_data(3500001,4000000);
+select fill_data(4000001,4500000);
+select fill_data(4500001,5141885);
 
 
 
-
+select count(*) from osm_changeset ;
 
 
 
