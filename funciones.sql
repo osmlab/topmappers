@@ -1,5 +1,6 @@
-﻿--create index  for osm_changeset
+﻿--create index  for osm_changeset an us_admin
 
+CREATE INDEX us_admin_index ON us_admin(gid);
 CREATE INDEX osm_changeset_index ON osm_changeset(ogc_fid);
 
 --------------------------------CREATE TABLE osm_changeset_US
