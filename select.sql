@@ -9,9 +9,29 @@ on ST_Within(ST_PointFromText('POINT(' || ((min_lon+max_lon)/2) || ' ' || ((min_
 limit 100
 
 
-select user_id, max(num_changes) from osm_changeset GROUP BY user_id limit 10
+select user_id, count(num_changes) from osm_changeset GROUP BY user_id limit 10
+
+select o.user_id , count(o.num_changes)from osm_changeset  as  o 
+left join   us_admin as u 
+on ST_Within(ST_PointFromText('POINT(' || ((o.min_lon+o.max_lon)/2) || ' ' || ((o.min_lat+o.max_lat)/2) ||')', 4326), u.geom)
+where o.user_id=510836 GROUP BY o.user_id 
 
 
-select * from osm_changeset where user_id=510836 
+select user_id , count(num_changes) from osm_changeset as o
+join   us_admin as u 
+on st_contains(u.geom, ST_PointFromText('POINT(' || ((o.min_lon+o.max_lon)/2) || ' ' || ((o.min_lat+o.max_lat)/2) ||')', 4326))
+GROUP BY o.user_id limit 3
+
+
+
+
+ELECT * FROM name, object WHERE st_contains(u.geom, ST_PointFromText('POINT(' || ((o.min_lon+o.max_lon)/2) || ' ' || ((o.min_lat+o.max_lat)/2) ||')', 4326)) LIMIT 10;
+
+----------------------------
+
+
+
+
+
 
 

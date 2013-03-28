@@ -42,13 +42,13 @@ DECLARE
 	BEGIN
 		_bandera=false;
 
-		_name=(SELECT name_0 FROM us_admin WHERE st_contains(us_admin.geom, _geom);
-			IF (_name IS NULL) THEN	
-			_bandera=true;
-			ELSE
-			_bandera=false;	
-			END IF;	
-		RETURN _bandera;
+		_name=(SELECT name_0 FROM us_admin WHERE st_contains(us_admin.geom, _geom));
+		IF (_name IS NULL) THEN	
+			_bandera=false;
+		ELSE
+			_bandera=true;	
+		END IF;	
+	RETURN _bandera;
 	END;
 $$ LANGUAGE plpgsql;
 
@@ -57,7 +57,9 @@ $$ LANGUAGE plpgsql;
 select check_contained(49.1874282,6.8995722);
 select check_contained(37.444938659668,-122.161445617676);
 select check_contained(-12,-74);
-select check_contained(32.91332,-82.88819);
+select check_contained(ST_PointFromText('POINT(-98.711 39.31513)', 4326));
+
+select check_contained(ST_PointFromText('POINT(-12 -74)', 4326));
 
 
 -----------------------------------------------------------------
@@ -66,15 +68,19 @@ RETURNS INT
 AS $$
 DECLARE
 	_geom GEOMETRY;
+	_bandera boolean;
       
 BEGIN		        
         FOR _i IN init..final
         
 		LOOP 	RAISE  NOTICE '====================ID=%', _i;
 			_geom=(select geom from osm_changeset where ogc_fid=_i);
+			_bandera=check_contained(_geom);
 
-			IF (_bandera) THEN			
-				DELETE FROM Table
+			RAISE  NOTICE '===========================%', _bandera ;
+			IF (_bandera=false) THEN
+			RAISE  NOTICE '===========================%', 'Elimina' ;			
+				DELETE FROM osm_changeset
 				WHERE ogc_fid=_i;					 				    
 			END IF;				
  
@@ -86,7 +92,7 @@ $$ LANGUAGE plpgsql;
 
 
 
-
+select remove_changes(1,100);
 
 
 
