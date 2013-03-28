@@ -21,16 +21,19 @@ CREATE INDEX geom_osm_changeset_index  ON osm_changeset using gist(geom);
 ---geometry
   UPDATE osm_changeset
    SET geom=(SELECT ST_PointFromText('POINT(' || lon || ' ' || lat ||')', 4326))
-   WHERE ogc_fid<100;
+   --WHERE ogc_fid<100;
+
+
+--delet for test soem rows
+DELETE FROM osm_changeset
+WHERE ogc_fid >100000;
+
+select count(*) from osm_changeset;
 
 
 
 
-
-
-
-
-CREATE OR REPLACE FUNCTION contained(_geom Geometry)
+CREATE OR REPLACE FUNCTION check_contained(_geom Geometry)
 RETURNS  boolean
 AS $$
 DECLARE
@@ -51,10 +54,10 @@ $$ LANGUAGE plpgsql;
 
 
 --TEST
-select contained_node(49.1874282,6.8995722);
-select contained_node(37.444938659668,-122.161445617676);
-select contained_node(-12,-74);
-select contained_node(32.91332,-82.88819);
+select check_contained(49.1874282,6.8995722);
+select check_contained(37.444938659668,-122.161445617676);
+select check_contained(-12,-74);
+select check_contained(32.91332,-82.88819);
 
 
 -----------------------------------------------------------------
