@@ -81,10 +81,11 @@ BEGIN
 			IF (_bandera) THEN
 			RAISE  NOTICE '===============================INSERT=%', _i;	
 			_user_id=(select user_id from osm_changeset where ogc_fid=_i);
+			_user_osm=(select user_osm from osm_changeset where ogc_fid=_i);
 			_closed_at=(select closed_at from osm_changeset where ogc_fid=_i);
 			_num_changes=(select num_changes from osm_changeset where ogc_fid=_i);			
 			INSERT INTO osm_changeset_us(ogc_fid, user_osm, user_id, closed_at, num_changes)
-			 VALUES (_i, 'null', _user_id, _closed_at, _num_changes);
+			 VALUES (_i, _user_osm , _user_id, _closed_at, _num_changes);
 			 				    
 			END IF;	
 						
