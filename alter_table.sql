@@ -32,7 +32,7 @@ select count(*) from osm_changeset;
 
 
 
-
+----------------------------funcion que conpruba pertene o no un punto a un poligon en US
 CREATE OR REPLACE FUNCTION check_contained(_geom Geometry)
 RETURNS  boolean
 AS $$
@@ -93,35 +93,17 @@ $$ LANGUAGE plpgsql;
 
 
 select remove_changes(1,100);
-
 select remove_changes(101,20000);
 select remove_changes(20001,40000);
 select remove_changes(40001,60000);
 select remove_changes(60001,80000);
 select remove_changes(80001,100000);
-
 select count(*) from osm_changeset
 
+--------create other column
+ALTER TABLE osm_changeset ADD COLUMN id SERIAL;
+CREATE INDEX id_osm_changeset_index ON osm_changeset(id);
+--select *from osm_changeset limit 10
 
-
-
-
-
-
-
-
-
-/*
-select o.user_id , count(o.num_changes)from osm_changeset  as  o 
-left join   us_admin as u 
-on st_contains(u.geom, o.geom)
-GROUP BY o.user_id limit 2
-
-510836 
-153669;2695
-81339;26
-
-select user_id , count(num_changes) from  osm_changeset   where user_id=81339 GROUP BY user_id*/
-
-
+SELECT user_id, count(*) AS nun_edits FROM osm_changeset GROUP BY user_id ORDER BY nun_edits DESC;
 
