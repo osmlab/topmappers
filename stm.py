@@ -26,13 +26,9 @@ query = """insert into osm_changeset
     values (?, ?, ?, ?, ?, ?, ?, ?, ?)"""
 
 def save(attrib):
-        #if(int(parse(attrib["created_at"]).strftime('%s'))>=1325376000):  
     attrib_id = int(attrib['id'])
     attrib_user = attrib.get('user', "none")
-    print (int(parse(attrib["created_at"]).strftime('%s')))
-    print (attrib_user) 
-    if(int(parse(attrib["created_at"]).strftime('%s'))>=1325376000):        
-     print ('************************************************************')
+    if(int(parse(attrib["created_at"]).strftime('%s'))>=1325376000): 
      cur.execute(query,
         (attrib_id,
         int(attrib.get('uid', -1)),
