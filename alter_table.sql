@@ -94,6 +94,14 @@ $$ LANGUAGE plpgsql;
 
 select remove_changes(1,100);
 
+select remove_changes(101,20000);
+select remove_changes(20001,40000);
+select remove_changes(40001,60000);
+select remove_changes(60001,80000);
+select remove_changes(80001,100000);
+
+select count(*) from osm_changeset
+
 
 
 
