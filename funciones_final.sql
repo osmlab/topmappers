@@ -8,7 +8,7 @@ CREATE INDEX geom_osm_changeset_index  ON osm_changeset using gist(geom);
 --ALTER TABLE osm_changeset DROP COLUMN geom RESTRICT;
 
   
---fill data--
+--Update Data --
    UPDATE osm_changeset
    SET lat=(SELECT ((min_lat+max_lat)/2))
    --WHERE ogc_fid<100;
@@ -91,19 +91,39 @@ $$ LANGUAGE plpgsql;
 
 
 
+select remove_changes(1,100000);
+select remove_changes(100001,200000);
+select remove_changes(200001,400000);
+select remove_changes(400001,600000);
+select remove_changes(600001,800000);
+select remove_changes(800001,1000000);
+select remove_changes(1000001,1200000);
+select remove_changes(1200001,1400000);
+select remove_changes(1400001,1600000);
+select remove_changes(1600001,1800000);
+select remove_changes(1800001,2000000);
+select remove_changes(2000001,2200000);
+select remove_changes(2200001,2400000);
+select remove_changes(2400001,2600000);
+select remove_changes(2600001,2800000);
+select remove_changes(2800001,3000000);
+select remove_changes(3000001,3200000);
+select remove_changes(3200001,3400000);
+select remove_changes(3400001,3600000);
+select remove_changes(3600001,3800000);
+select remove_changes(3800001,4000000);
+select remove_changes(4000001,4200000);
+select remove_changes(4200001,4400000);
+select remove_changes(4400001,4600000);
+select remove_changes(4600001,4800000);
+select remove_changes(4800001,5000000);
+select remove_changes(5000001,5141885);
 
-select remove_changes(1,100);
-select remove_changes(101,20000);
-select remove_changes(20001,40000);
-select remove_changes(40001,60000);
-select remove_changes(60001,80000);
-select remove_changes(80001,100000);
 select count(*) from osm_changeset
-
 --------create other column
 ALTER TABLE osm_changeset ADD COLUMN id SERIAL;
 CREATE INDEX id_osm_changeset_index ON osm_changeset(id);
 --select *from osm_changeset limit 10
 
-SELECT user_id, count(*) AS nun_edits FROM osm_changeset GROUP BY user_id ORDER BY nun_edits DESC;
+SELECT osm_user , count(*) AS nun_edits FROM osm_changeset GROUP BY osm_user ORDER BY nun_edits DESC;
 
