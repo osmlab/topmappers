@@ -24,15 +24,7 @@ CREATE INDEX geom_osm_changeset_index  ON osm_changeset using gist(geom);
    --WHERE ogc_fid<100;
 
 
---delet for test soem rows
-DELETE FROM osm_changeset
-WHERE ogc_fid >100000;
-
-select count(*) from osm_changeset;
-
-
-
-----------------------------funcion que conpruba pertene o no un punto a un poligon en US
+----------------------------funcion que conprueba si un punto pertenece a US
 CREATE OR REPLACE FUNCTION check_contained(_geom Geometry)
 RETURNS  boolean
 AS $$
@@ -54,15 +46,10 @@ $$ LANGUAGE plpgsql;
 
 
 --TEST
-select check_contained(49.1874282,6.8995722);
-select check_contained(37.444938659668,-122.161445617676);
-select check_contained(-12,-74);
 select check_contained(ST_PointFromText('POINT(-98.711 39.31513)', 4326));
-
 select check_contained(ST_PointFromText('POINT(-12 -74)', 4326));
 
-
------------------------------------------------------------------
+-------------------------------------------Funccion para eliminar Filas que no estan en US
 CREATE OR REPLACE FUNCTION remove_changes(init INTEGER,final INTEGER) 
 RETURNS INT
 AS $$
@@ -73,13 +60,13 @@ DECLARE
 BEGIN		        
         FOR _i IN init..final
         
-		LOOP 	RAISE  NOTICE '====================ID=%', _i;
+		LOOP 	
+		    --RAISE  NOTICE '====================ID=%', _i;
 			_geom=(select geom from osm_changeset where ogc_fid=_i);
 			_bandera=check_contained(_geom);
-
-			RAISE  NOTICE '===========================%', _bandera ;
+			--RAISE  NOTICE '===========================%', _bandera ;
 			IF (_bandera=false) THEN
-			RAISE  NOTICE '===========================%', 'Elimina' ;			
+			--RAISE  NOTICE '===========================%', 'Elimina' ;			
 				DELETE FROM osm_changeset
 				WHERE ogc_fid=_i;					 				    
 			END IF;				
@@ -90,7 +77,7 @@ END;
 $$ LANGUAGE plpgsql;
 
 
-
+--Ejecutar Funcion para ajecutar mmas rapido el procesamiento y aprovechar al maxino La Maquina
 select remove_changes(1,100000);
 select remove_changes(100001,200000);
 select remove_changes(200001,400000);
@@ -120,10 +107,7 @@ select remove_changes(4800001,5000000);
 select remove_changes(5000001,5141885);
 
 select count(*) from osm_changeset
---------create other column
-ALTER TABLE osm_changeset ADD COLUMN id SERIAL;
-CREATE INDEX id_osm_changeset_index ON osm_changeset(id);
---select *from osm_changeset limit 10
 
+-------Finalmente Seleccionar de manera decentente los usuario y sus ediciones
 SELECT osm_user , count(*) AS nun_edits FROM osm_changeset GROUP BY osm_user ORDER BY nun_edits DESC;
 
