@@ -13,9 +13,9 @@ Map
 
 #map {
   background-color: #2D2A2A;
-  height: 580px;
+  height: 100%;
   position:absolute; 
-  top:80px; 
+  top:0px; 
   width:100%; 
   }
 

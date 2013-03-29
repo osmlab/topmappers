@@ -19,10 +19,10 @@ function mm_data(callback) {
 
             for (var i = 0; i < x[j].edicion.length; i++) {
                 x[j].edicion[i]['properties'] = {};
-                /*x[j].edicion[i].properties['marker-symbol'] = 'hotel';
-                x[j].edicion[i].properties['marker-size'] = 'small';
-                x[j].edicion[i].properties['marker-color'] = '#000000';*/
-                x[j].edicion[i].properties['title'] = 'Num changes:'+x[j].edicion[i].num_changes;            
+          
+                x[j].edicion[i].properties['marker-size'] = 'small';            
+                x[j].edicion[i].properties['title'] = 'Num changes:'+x[j].edicion[i].num_changes;  
+             
 
                 x[j].edicion[i]['geometry'] = {};
                 x[j].edicion[i].geometry['type']= 'Point';
