@@ -1,0 +1,21 @@
+body {
+  background-color: #fff;
+  font: 14px/20px Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0; 
+  }
+
+
+
+/*-----------------------------------
+Map
+-------------------------------------*/
+
+#map {
+  background-color: #2D2A2A;
+  height: 580px;
+  position:absolute; 
+  top:80px; 
+  width:100%; 
+  }
+
