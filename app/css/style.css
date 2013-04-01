@@ -19,3 +19,12 @@ Map
   width:100%; 
   }
 
+.userlayers{
+  position:absolute;
+  background-color: #fff;
+  top:0px;
+  left: :0px;
+  width:200px;
+  height:auto;
+  z-index: 2;
+}

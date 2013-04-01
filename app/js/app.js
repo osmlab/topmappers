@@ -2,31 +2,44 @@ var map_id = 'ruben.map-5164bfio',
     features = [],
     interaction,
     map = mapbox.map('map');
-
-
-
 map.addLayer(mapbox.layer().id(map_id));
-
-
-mm_data(mapData);
-
 map.centerzoom({
     lat: 37.504,
     lon: -94.668
 }, 5);
 
+
+
+mm_data(listUser);
 map.setZoomRange(0, 18);
 
+//features = f[24].edicion;
+
+
+function listUser(f){
+ 
+features=f;
+console.log(features);
+
+var o='';
+for (var i = 0; i<features.length; i++) {
+   
+   o +='<li><a href="#'+features[i].osm_user+'">'+features[i].osm_user+'</a></li>'; 
+
+};
+
+console.log(o);
+$('ul').append(o);
+}
+
+
+
+
 function mapData(f) {
-    console.log(f)
-    features = f[24].edicion;
-    //features = f;    
+    features = f;    
     console.log(features);
-
     markerLayer = mapbox.markers.layer().features(features);
-
     markerLayer.factory(function(m) {
-
         //var elem = mapbox.markers.simplestyle_factory(m);
         var elem = simplestyle_factory_rub(m);
         MM.addEvent(elem, 'click', function(e) {
@@ -44,9 +57,7 @@ function mapData(f) {
     map.ui.zoomer.add();
     map.ui.zoombox.add();
     map.ui.hash.add();
-
 }
-
 
 function newMarker() {
     if (window.location.hash == '#new') {
@@ -58,25 +69,17 @@ function newMarker() {
     }
 }
 
-
-
 simplestyle_factory_rub = function(feature) {
-
     var sizes = {
-        small: [15, 18],
+        small: [15, 20],
         medium: [30, 70],
         large: [35, 90]
     };
-
     var fp = feature.properties || {};
-
     var size = fp['marker-size'] || 'medium';
-   
     var symbol = fp['marker-symbol'];
-    //console.log(symbol);
     var color = fp['marker-color'] || '7e7e7e';
     color = color.replace('#', '');
-
     var d = document.createElement('img');
     d.width = sizes[size][0];
     d.height = sizes[size][1];
@@ -90,7 +93,12 @@ simplestyle_factory_rub = function(feature) {
     ds.marginLeft = -(sizes[size][0] / 2) + 'px';
     ds.cursor = 'pointer';
     ds.pointerEvents = 'all';
-
     return d;
 };
 
+$(document).ready(function () {
+
+
+
+
+});

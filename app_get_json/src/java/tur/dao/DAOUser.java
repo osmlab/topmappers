@@ -41,7 +41,7 @@ public class DAOUser {
 
         try {
             //String sql = "SELECT user_id , count(*) AS nun_edits FROM osm_changeset GROUP BY user_id ORDER BY nun_edits ASC limit 40";
-            String sql="SELECT * from osm_changeset where user_id=117055 or user_id=843366";
+            String sql="SELECT user_id , count(*) AS nun_edits FROM osm_changeset GROUP BY user_id ORDER BY nun_edits DESC limit 5";
             //String sql = "SELECT user_id , count(*) AS nun_edits FROM osm_changeset GROUP BY user_id ORDER BY nun_edits DESC limit 100;";
             pstmt = conn.prepareStatement(sql);
             rs = pstmt.executeQuery();
