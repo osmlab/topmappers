@@ -38,10 +38,10 @@ function mm_edit(callback) {
     });
 
     function response(x) {
-console.log(x)
+     console.log(x)
         var features = [];
 
-        for (var j = 90; j < x.length; j++) {
+        for (var j = 0; j < x.length-75; j++) {
 
             for (var i = 0; i < x[j].edicion.length; i++) {
                 x[j].edicion[i]['properties'] = {};

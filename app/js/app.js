@@ -21,7 +21,7 @@ function listUser(f) {
     var list_usser = f;
     //console.log(list_usser);
     var o = '';
-    for (var i = 90; i < list_usser.length; i++) {
+    for (var i = 0; i < list_usser.length-75; i++) {
         o += '<li  id="' + list_usser[i].user_id + '"><a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].osm_user + '</a></li>';
     };
     //console.log(o);
@@ -31,8 +31,8 @@ function listUser(f) {
 
 function listEdit(f) {
     features = f;
-
     console.log(features);
+    $('#map').removeClass('loading');
 }
 
 
@@ -42,7 +42,6 @@ function mapData(f) {
     if (map.getLayers().length == 2) {
         map.removeLayerAt(1);
     }
-
 
     var features_edit = [];
     features_edit = f;
