@@ -40,8 +40,8 @@ public class DAOUser {
 
 
         try {
-            //String sql = "SELECT user_id , count(*) AS nun_edits FROM osm_changeset GROUP BY user_id ORDER BY nun_edits ASC limit 40";
-            String sql="SELECT user_id , count(*) AS nun_edits FROM osm_changeset GROUP BY user_id ORDER BY nun_edits DESC limit 5";
+            String sql = "SELECT user_id , count(*) AS nun_edits FROM osm_changeset GROUP BY user_id ORDER BY nun_edits DESC limit 100;";
+           // String sql="SELECT user_id , count(*) AS nun_edits FROM osm_changeset GROUP BY user_id ORDER BY nun_edits DESC limit 5";
             //String sql = "SELECT user_id , count(*) AS nun_edits FROM osm_changeset GROUP BY user_id ORDER BY nun_edits DESC limit 100;";
             pstmt = conn.prepareStatement(sql);
             rs = pstmt.executeQuery();
@@ -49,8 +49,9 @@ public class DAOUser {
             while (rs.next()) {
                 User user = new User();
                 user.setUser_id(rs.getInt("user_id"));
-                System.out.println("------------------user id--" + user.getUser_id());
-                user.setEdicion(listEdition(user.getUser_id()));
+                ///System.out.println("------------------user id--" + user.getUser_id());
+               //user.setEdicion(listEdition(user.getUser_id()));
+                listEdition(user.getUser_id());
                 user.setOsm_user(osm_user);
                 list.add(user);
 

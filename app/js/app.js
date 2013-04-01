@@ -16,7 +16,7 @@ map.setZoomRange(0, 18);
 //features = f[24].edicion;
 
 
-function listUser(f){
+function mm_user(f){
  
 features=f;
 console.log(features);
