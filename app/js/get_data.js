@@ -15,19 +15,20 @@ function mm_user(callback) {
 
         var features = [];
         for (var j = 0; j < x.length; j++) {
-            features.push(x[i]);
+            features.push(x[j]);
         };
-        console.log(features);
+        //console.log(features);
         return callback(features);
     }
-}
+};
 
 
-function mm_data(callback) {
+function mm_edit(callback) {
+    //alert('mm_edit');
     if (typeof reqwest === 'undefined') {
-        throw 'CSV: reqwest required for mm_recurso';
+        throw 'CSV: reqwest required for mm_edit';
     }
-    var url = 'http://rub21.github.com/report_top_us/app/SList5.json?callback=callback';
+    var url = 'http://rub21.github.com/report_top_us/app/SListUsers.json?callback=callback';
     reqwest({
         url: url,
         type: 'jsonp',
@@ -37,10 +38,10 @@ function mm_data(callback) {
     });
 
     function response(x) {
-
+console.log(x)
         var features = [];
 
-        for (var j = 0; j < x.length; j++) {
+        for (var j = 90; j < x.length; j++) {
 
             for (var i = 0; i < x[j].edicion.length; i++) {
                 x[j].edicion[i]['properties'] = {};
@@ -49,6 +50,7 @@ function mm_data(callback) {
                 x[j].edicion[i].properties['title'] = 'Num changes:' + x[j].edicion[i].num_changes;
 
                 x[j].edicion[i]['geometry'] = {};
+
                 x[j].edicion[i].geometry['type'] = 'Point';
                 x[j].edicion[i].geometry['coordinates'] = [];
                 x[j].edicion[i].geometry.coordinates[0] = x[j].edicion[i].lon;
@@ -56,11 +58,10 @@ function mm_data(callback) {
 
             }
 
-            features.push(x[i]);
+            features.push(x[j]);
 
         };
-        //console.log(features);
-
+ 
 
         return callback(features);
     }

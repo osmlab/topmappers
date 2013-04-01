@@ -19,7 +19,7 @@ Map
   width:100%; 
   }
 
-.userlayers{
+#userlayers{
   position:absolute;
   background-color: #fff;
   top:0px;

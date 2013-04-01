@@ -8,37 +8,46 @@ map.centerzoom({
     lon: -94.668
 }, 5);
 
-
-
-mm_data(listUser);
 map.setZoomRange(0, 18);
+/*map.ui.zoomer.add();
+map.ui.zoombox.add();
+map.ui.hash.add();*/
+mm_edit(listEdit);
 
-//features = f[24].edicion;
+mm_user(listUser);
 
 
-function mm_user(f){
- 
-features=f;
-console.log(features);
+function listUser(f) {
+    var list_usser = f;
+    //console.log(list_usser);
+    var o = '';
+    for (var i = 90; i < list_usser.length; i++) {
+        o += '<li  id="' + list_usser[i].user_id + '"><a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].osm_user + '</a></li>';
+    };
+    //console.log(o);
+    $('ul').append(o);
+}
 
-var o='';
-for (var i = 0; i<features.length; i++) {
-   
-   o +='<li><a href="#'+features[i].osm_user+'">'+features[i].osm_user+'</a></li>'; 
 
-};
+function listEdit(f) {
+    features = f;
 
-console.log(o);
-$('ul').append(o);
+    console.log(features);
 }
 
 
 
-
 function mapData(f) {
-    features = f;    
-    console.log(features);
-    markerLayer = mapbox.markers.layer().features(features);
+
+    if (map.getLayers().length == 2) {
+        map.removeLayerAt(1);
+    }
+
+
+    var features_edit = [];
+    features_edit = f;
+
+    markerLayer = mapbox.markers.layer().features(features_edit);
     markerLayer.factory(function(m) {
         //var elem = mapbox.markers.simplestyle_factory(m);
         var elem = simplestyle_factory_rub(m);
@@ -54,9 +63,7 @@ function mapData(f) {
 
     interaction = mapbox.markers.interaction(markerLayer);
     map.addLayer(markerLayer);
-    map.ui.zoomer.add();
-    map.ui.zoombox.add();
-    map.ui.hash.add();
+
 }
 
 function newMarker() {
@@ -96,9 +103,30 @@ simplestyle_factory_rub = function(feature) {
     return d;
 };
 
-$(document).ready(function () {
+$(document).ready(function() {
+
+
+    $('#userlayers').on('click', 'li', function(e) {
 
 
 
+        function findBy(id) {
+            var found;
+            for (var i = 0; i < features.length; i++) {
+                var feature = features[i];
+                if (feature.user_id == id) {
+                    found = feature;
+                    break
+                }
+            }
+            return found
+        };
+
+        var user_id_find = $(this).attr('id');
+        var user = findBy(user_id_find);
+        mapData(user.edicion);
+        // console.log(user);
+
+    });
 
 });
