@@ -106,9 +106,6 @@ $(document).ready(function() {
 
 
     $('#userlayers').on('click', 'li', function(e) {
-
-
-
         function findBy(id) {
             var found;
             for (var i = 0; i < features.length; i++) {
