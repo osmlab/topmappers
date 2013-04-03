@@ -84,9 +84,6 @@ public class SListUsers extends HttpServlet {
 
             }
 
-
-
-
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
