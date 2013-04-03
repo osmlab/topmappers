@@ -23,12 +23,17 @@ function mm_user(callback) {
 };
 
 
+
+
+
+/*
+
 function mm_edit(callback) {
     //alert('mm_edit');
     if (typeof reqwest === 'undefined') {
         throw 'CSV: reqwest required for mm_edit';
     }
-    var url = 'http://rub21.github.com/report_top_us/app/SListUsers.json?callback=callback';
+    var url = 'http://rub21.github.com/report_top_us/json/user103107.json?callback=callback';
     reqwest({
         url: url,
         type: 'jsonp',
@@ -64,5 +69,27 @@ function mm_edit(callback) {
  
 
         return callback(features);
+    }
+}
+*/
+
+function mm_file_user(file_user) {
+    //alert('mm_edit');
+    if (typeof reqwest === 'undefined') {
+        throw 'CSV: reqwest required for mm_edit';
+    }
+    var url = 'http://rub21.github.com/report_top_us/json/'+file_user;
+    reqwest({
+        url: url,
+        type: 'jsonp',
+        jsonpCallback: 'callback',
+        success: response,
+        error: response
+    });
+
+    function response(x) {
+     console.log(x)
+
+        return x;
     }
 }

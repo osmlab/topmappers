@@ -12,7 +12,7 @@ map.setZoomRange(0, 18);
 /*map.ui.zoomer.add();
 map.ui.zoombox.add();
 map.ui.hash.add();*/
-mm_edit(listEdit);
+/*mm_edit(listEdit);*/
 
 mm_user(listUser);
 
@@ -21,7 +21,7 @@ function listUser(f) {
     var list_usser = f;
     //console.log(list_usser);
     var o = '';
-    for (var i = 0; i < list_usser.length-75; i++) {
+    for (var i = 0; i < list_usser.length - 75; i++) {
         o += '<li  id="' + list_usser[i].user_id + '"><a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].osm_user + '</a></li>';
     };
     //console.log(o);
@@ -106,7 +106,8 @@ $(document).ready(function() {
 
 
     $('#userlayers').on('click', 'li', function(e) {
-        function findBy(id) {
+
+        /*function findBy(id) {
             var found;
             for (var i = 0; i < features.length; i++) {
                 var feature = features[i];
@@ -116,11 +117,16 @@ $(document).ready(function() {
                 }
             }
             return found
-        };
+        };*/
 
-        var user_id_find = $(this).attr('id');
-        var user = findBy(user_id_find);
-        mapData(user.edicion);
+        var file_user = 'user' + $(this).attr('id') + '.json';
+
+
+        mm_file_user(file_user);
+        
+        /*var user_id_find = $(this).attr('id');
+        var user = findBy(user_id_find);*/
+       // mapData(user.edicion);
         // console.log(user);
 
     });
