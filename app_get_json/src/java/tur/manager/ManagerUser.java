@@ -29,4 +29,14 @@ public class ManagerUser {
         dAOUser = new DAOUser(cn);
         return dAOUser.listarUser();
     }
+
+    public List list_User_by_Edicion(int id) {
+        dAOUser = new DAOUser(cn);
+        return dAOUser.list_User_by_Edicion(id);
+    }
+
+    public List list_idUsers() {
+        dAOUser = new DAOUser(cn);
+        return dAOUser.list_idUsers();
+    }
 }

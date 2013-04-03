@@ -12,7 +12,10 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import tur.bean.Edicion;
+import tur.bean.Geometry;
+import tur.bean.Properties;
 import tur.bean.User;
+import tur.bean.User_by_Edicion;
 
 /**
  *
@@ -40,21 +43,21 @@ public class DAOUser {
 
 
         try {
-            String sql = "SELECT user_id , count(*) AS nun_edits FROM osm_changeset GROUP BY user_id ORDER BY nun_edits DESC limit 100;";
-           // String sql="SELECT user_id , count(*) AS nun_edits FROM osm_changeset GROUP BY user_id ORDER BY nun_edits DESC limit 5";
-            //String sql = "SELECT user_id , count(*) AS nun_edits FROM osm_changeset GROUP BY user_id ORDER BY nun_edits DESC limit 100;";
+            // String sql = "SELECT user_id , count(*) AS nun_edits FROM osm_changeset GROUP BY user_id ORDER BY nun_edits DESC limit 100;";
+            String sql = "SELECT user_id, osm_user, min_lon, min_lat, max_lon, max_lat, closed_at, num_changes, lat, lon "
+                    + "FROM osm_changeset where user_id= 39504;";
+
             pstmt = conn.prepareStatement(sql);
             rs = pstmt.executeQuery();
-
+            int num = 0;
             while (rs.next()) {
                 User user = new User();
                 user.setUser_id(rs.getInt("user_id"));
                 ///System.out.println("------------------user id--" + user.getUser_id());
-               //user.setEdicion(listEdition(user.getUser_id()));
+                //user.setEdicion(listEdition(user.getUser_id()));
                 listEdition(user.getUser_id());
                 user.setOsm_user(osm_user);
                 list.add(user);
-
             }
 
             pstmt.close();
@@ -93,6 +96,75 @@ public class DAOUser {
 
         } catch (SQLException ex) {
             System.out.println("Error en Listar Edicion: " + ex);
+        }
+        return list;
+
+    }
+
+    public ArrayList<User_by_Edicion> list_User_by_Edicion(int id) {
+
+        ArrayList<User_by_Edicion> list = new ArrayList<User_by_Edicion>();
+
+        try {
+
+            String sql = "select user_id,osm_user,min_lon,min_lat, max_lon , max_lat ,"
+                    + "(CAST(((TIMESTAMP WITH TIME ZONE 'epoch' +  INTERVAL '1 second' * closed_at)|| ' ') AS date)|| '') as closed_at ,"
+                    + " num_changes from  osm_changeset where user_id=" + id + ";";
+
+            System.out.println(sql);
+            pstmti = conni.prepareStatement(sql);
+            rsi = pstmti.executeQuery();
+            while (rsi.next()) {
+
+                User_by_Edicion user_by_Edicion = new User_by_Edicion();
+                Geometry geometry = new Geometry();
+                Properties properties = new Properties();
+                double min_lon = rsi.getDouble("min_lon");
+                double min_lat = rsi.getDouble("min_lat");
+                double max_lon = rsi.getDouble("max_lon");
+                double max_lat = rsi.getDouble("max_lat");
+                double[] cordinates = new double[]{(min_lon + max_lon) / 2, (min_lat + max_lat) / 2};
+
+                geometry.setType("Point");
+                geometry.setCoordinates(cordinates);
+                properties.setUser_id(rsi.getInt("user_id"));
+                properties.setOsm_user(rsi.getString("osm_user"));
+                properties.setClosed_at(rsi.getString("closed_at"));
+                properties.setNum_changes(rsi.getInt("num_changes"));
+
+                user_by_Edicion.setGeometry(geometry);
+                user_by_Edicion.setType("Feature");
+                user_by_Edicion.setProperties(properties);
+
+                list.add(user_by_Edicion);
+            }
+            pstmti.close();
+            rsi.close();
+
+        } catch (SQLException ex) {
+            System.out.println("Error en Listar Edicion: " + ex);
+        }
+        return list;
+
+    }
+
+    public List list_idUsers() {
+        List list = new LinkedList();
+        try {
+            String sql = "SELECT user_id , count(*) AS nun_edits FROM osm_changeset GROUP BY user_id ORDER BY nun_edits DESC limit 100;";
+
+            pstmt = conn.prepareStatement(sql);
+            rs = pstmt.executeQuery();
+            int num = 0;
+            while (rs.next()) {
+                int id = rs.getInt("user_id");
+                list.add(id);
+            }
+
+            pstmt.close();
+            rs.close();
+        } catch (SQLException ex) {
+            System.out.println("Error en en id" + ex);
         }
         return list;
 

@@ -5,6 +5,9 @@
 package tur.servlet;
 
 import com.google.gson.Gson;
+import com.google.gson.stream.JsonWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.LinkedList;
@@ -36,14 +39,54 @@ public class SListUsers extends HttpServlet {
         BDConnecion conexion = new BDConnecion(ctx);
         managerUser = new ManagerUser(conexion);
         // BRecurso bRecurso = new BRecurso();
+        List list_iusers = new LinkedList();
         List list = new LinkedList();
+
+
+
         try {
-            list = managerUser.listarUser();
-            System.out.println("---------" + list.toString());
-            String json = new Gson().toJson(list);
-            response.setContentType("application/json");
-            response.setCharacterEncoding("UTF-8");
-            response.getWriter().write("callback(" + json + ")");
+            /* list = managerUser.listarUser();
+             System.out.println("---------" + list.toString());
+             String json = new Gson().toJson(list);
+             response.setContentType("application/json");
+             response.setCharacterEncoding("UTF-8");
+            
+             response.getWriter().write("{\n"
+             + "	\"type\": \"FeatureCollection\",\n"
+             + "	\"features\":" + json + "}");*/
+
+            /**
+             * ******************************************************************
+             */
+            /* id users for test
+             * 39504
+             * 103107
+             * 322785*/
+            list_iusers = managerUser.list_idUsers();
+            // System.out.println("length--" + list_iusers.size());
+            for (int i = 0; i < list_iusers.size(); i++) {
+
+                String id_user = list_iusers.get(i) + "";
+
+                list = managerUser.list_User_by_Edicion(Integer.parseInt(id_user));
+                String json = new Gson().toJson(list);
+                response.setContentType("application/json");
+                response.setCharacterEncoding("UTF-8");
+                //write a json file
+                File outputFile = new File(getServletContext().getRealPath("/") + "user" + id_user + ".json");
+                FileWriter fout = new FileWriter(outputFile);
+                fout.write("{\n"
+                        + "	\"type\": \"FeatureCollection\",\n"
+                        + "	\"features\":" + json + "}");
+                fout.close();
+
+                System.out.println(outputFile.getAbsolutePath());
+
+            }
+
+
+
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
