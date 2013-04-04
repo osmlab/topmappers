@@ -19,7 +19,7 @@ Map
   width:100%; 
   }
 
-.contain{
+.contain-left{
   position:absolute;
   background-color: #fff;
   top:0px;
@@ -28,6 +28,18 @@ Map
   height:auto;
   z-index: 2;
 }
+
+.contain-rigth{
+   position:absolute;
+  background-color: #fff;
+  top:0px;
+  right: :0px;
+  width:200px;
+  height:auto;
+  z-index: 2;
+}
+
+
 
 /*-----------------------------------
 Loading

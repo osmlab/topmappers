@@ -9,12 +9,10 @@ map.centerzoom({
 }, 5);
 
 map.setZoomRange(0, 18);
-/*map.ui.zoomer.add();
-map.ui.zoombox.add();
-map.ui.hash.add();*/
-/*mm_edit(listEdit);*/
 
 mm_user(listUser);
+
+mm_file_user('user722137.json', mapData);
 
 
 function listUser(f) {
@@ -32,7 +30,7 @@ function listUser(f) {
 function listEdit(f) {
     features = f;
     console.log(features);
-    $('#map').removeClass('loading');
+
 }
 
 
@@ -62,7 +60,7 @@ function mapData(f) {
 
     interaction = mapbox.markers.interaction(markerLayer);
     map.addLayer(markerLayer);
-
+    $('#map').removeClass('loading');
 }
 
 function newMarker() {
@@ -107,27 +105,11 @@ $(document).ready(function() {
 
     $('#userlayers').on('click', 'li', function(e) {
 
-        /*function findBy(id) {
-            var found;
-            for (var i = 0; i < features.length; i++) {
-                var feature = features[i];
-                if (feature.user_id == id) {
-                    found = feature;
-                    break
-                }
-            }
-            return found
-        };*/
-
         var file_user = 'user' + $(this).attr('id') + '.json';
+         $('#map').addClass('loading');
+        mm_file_user(file_user, mapData);
+       
 
-
-        mm_file_user(file_user);
-        
-        /*var user_id_find = $(this).attr('id');
-        var user = findBy(user_id_find);*/
-       // mapData(user.edicion);
-        // console.log(user);
 
     });
 

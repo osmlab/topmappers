@@ -75,9 +75,12 @@ public class SListUsers extends HttpServlet {
                 //write a json file
                 File outputFile = new File(getServletContext().getRealPath("/") + "user" + id_user + ".json");
                 FileWriter fout = new FileWriter(outputFile);
-                fout.write("callback({\n"
+                fout.write("{\n"
                         + "	\"type\": \"FeatureCollection\",\n"
-                        + "	\"features\":" + json + "})");
+                        + "	\"features\":" + json + "}");
+                /*fout.write("callback({\n"
+                        + "	\"type\": \"FeatureCollection\",\n"
+                        + "	\"features\":" + json + "})");*/
                 fout.close();
 
                 System.out.println(outputFile.getAbsolutePath());

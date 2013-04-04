@@ -73,12 +73,12 @@ function mm_edit(callback) {
 }
 */
 
-function mm_file_user(file_user) {
+function mm_file_user(file_user,callback) {
     //alert('mm_edit');
     if (typeof reqwest === 'undefined') {
         throw 'CSV: reqwest required for mm_edit';
     }
-    var url = 'http://rub21.github.com/report_top_us/json/'+file_user;
+    var url = 'http://rub21.github.com/report_top_us/json_app/'+file_user+'?callback=callback';
     reqwest({
         url: url,
         type: 'jsonp',
@@ -88,8 +88,7 @@ function mm_file_user(file_user) {
     });
 
     function response(x) {
-     console.log(x)
-
-        return x;
+    // console.log(x.features)
+        return callback(x.features);
     }
 }
