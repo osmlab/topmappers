@@ -11,11 +11,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import tur.bean.Edicion;
+import tur.bean.Edicions;
 import tur.bean.Geometry;
 import tur.bean.Properties;
 import tur.bean.User;
-import tur.bean.User_by_Edicion;
+import tur.bean.Points_edition;
 
 /**
  *
@@ -30,122 +30,11 @@ public class DAOUser {
     Connection conni = null;
     PreparedStatement pstmti = null;
     ResultSet rsi = null;
-    String osm_user = null;
+    //String osm_user = null;
 
     public DAOUser(Connection conn) {
         this.conn = conn;
         this.conni = conn;
-    }
-
-    public List listarUser() {
-
-        List list = new LinkedList();
-
-
-        try {
-            // String sql = "SELECT user_id , count(*) AS nun_edits FROM osm_changeset GROUP BY user_id ORDER BY nun_edits DESC limit 100;";
-            String sql = "SELECT user_id, osm_user, min_lon, min_lat, max_lon, max_lat, closed_at, num_changes, lat, lon "
-                    + "FROM osm_changeset where user_id= 39504;";
-
-            pstmt = conn.prepareStatement(sql);
-            rs = pstmt.executeQuery();
-            int num = 0;
-            while (rs.next()) {
-                User user = new User();
-                user.setUser_id(rs.getInt("user_id"));
-                ///System.out.println("------------------user id--" + user.getUser_id());
-                //user.setEdicion(listEdition(user.getUser_id()));
-                listEdition(user.getUser_id());
-                user.setOsm_user(osm_user);
-                list.add(user);
-            }
-
-            pstmt.close();
-            rs.close();
-        } catch (SQLException ex) {
-            System.out.println("Error en Listar" + ex);
-        }
-        return list;
-    }
-
-    public ArrayList<Edicion> listEdition(int id) {
-
-        ArrayList<Edicion> list = new ArrayList<Edicion>();
-
-        try {
-
-            String sql = "select osm_user,min_lon,min_lat, max_lon , max_lat , (CAST(((TIMESTAMP WITH TIME ZONE 'epoch' +  INTERVAL '1 second' * closed_at)|| ' ') AS date)|| '') as closed_at , num_changes from  osm_changeset where user_id=" + id + ";";
-            System.out.println(sql);
-            pstmti = conni.prepareStatement(sql);
-            rsi = pstmti.executeQuery();
-            while (rsi.next()) {
-                osm_user = rsi.getString("osm_user");
-                Edicion edicion = new Edicion();
-                edicion.setMin_lon(rsi.getDouble("min_lon"));
-                edicion.setMin_lat(rsi.getDouble("min_lat"));
-                edicion.setMax_lon(rsi.getDouble("max_lon"));
-                edicion.setMax_lat(rsi.getDouble("max_lat"));
-                edicion.setClosed_at(rsi.getString("closed_at"));
-                edicion.setNum_changes(rsi.getInt("num_changes"));
-                edicion.setLat((edicion.getMin_lat() + edicion.getMax_lat()) / 2);
-                edicion.setLon((edicion.getMin_lon() + edicion.getMax_lon()) / 2);
-                list.add(edicion);
-            }
-            pstmti.close();
-            rsi.close();
-
-        } catch (SQLException ex) {
-            System.out.println("Error en Listar Edicion: " + ex);
-        }
-        return list;
-
-    }
-
-    public ArrayList<User_by_Edicion> list_User_by_Edicion(int id) {
-
-        ArrayList<User_by_Edicion> list = new ArrayList<User_by_Edicion>();
-
-        try {
-
-            String sql = "select user_id,osm_user,min_lon,min_lat, max_lon , max_lat ,"
-                    + "(CAST(((TIMESTAMP WITH TIME ZONE 'epoch' +  INTERVAL '1 second' * closed_at)|| ' ') AS date)|| '') as closed_at ,"
-                    + " num_changes from  osm_changeset where user_id=" + id + ";";
-
-            System.out.println(sql);
-            pstmti = conni.prepareStatement(sql);
-            rsi = pstmti.executeQuery();
-            while (rsi.next()) {
-
-                User_by_Edicion user_by_Edicion = new User_by_Edicion();
-                Geometry geometry = new Geometry();
-                Properties properties = new Properties();
-                double min_lon = rsi.getDouble("min_lon");
-                double min_lat = rsi.getDouble("min_lat");
-                double max_lon = rsi.getDouble("max_lon");
-                double max_lat = rsi.getDouble("max_lat");
-                double[] cordinates = new double[]{(min_lon + max_lon) / 2, (min_lat + max_lat) / 2};
-
-                geometry.setType("Point");
-                geometry.setCoordinates(cordinates);
-                properties.setUser_id(rsi.getInt("user_id"));
-                properties.setOsm_user(rsi.getString("osm_user"));
-                properties.setClosed_at(rsi.getString("closed_at"));
-                properties.setNum_changes(rsi.getInt("num_changes"));
-
-                user_by_Edicion.setGeometry(geometry);
-                user_by_Edicion.setType("Feature");
-                user_by_Edicion.setProperties(properties);
-
-                list.add(user_by_Edicion);
-            }
-            pstmti.close();
-            rsi.close();
-
-        } catch (SQLException ex) {
-            System.out.println("Error en Listar Edicion: " + ex);
-        }
-        return list;
-
     }
 
     public List list_idUsers() {
@@ -167,6 +56,104 @@ public class DAOUser {
             System.out.println("Error en en id" + ex);
         }
         return list;
+
+    }
+
+    public ArrayList<Points_edition> list_points_edition(int id) {
+
+        ArrayList<Points_edition> list = new ArrayList<Points_edition>();
+
+        try {
+
+            String sql = "select user_id,osm_user,min_lon,min_lat, max_lon , max_lat ,"
+                    + "(CAST(((TIMESTAMP WITH TIME ZONE 'epoch' +  INTERVAL '1 second' * closed_at)|| ' ') AS date)|| '') as closed_at ,"
+                    + " num_changes from  osm_changeset where user_id=" + id + ";";
+
+            System.out.println(sql);
+            pstmti = conni.prepareStatement(sql);
+            rsi = pstmti.executeQuery();
+            while (rsi.next()) {
+
+                Points_edition point_edition = new Points_edition();
+
+                Geometry geometry = new Geometry();
+                Properties properties = new Properties();
+                double min_lon = rsi.getDouble("min_lon");
+                double min_lat = rsi.getDouble("min_lat");
+                double max_lon = rsi.getDouble("max_lon");
+                double max_lat = rsi.getDouble("max_lat");
+                double[] cordinates = new double[]{(min_lon + max_lon) / 2, (min_lat + max_lat) / 2};
+
+                geometry.setType("Point");
+                geometry.setCoordinates(cordinates);
+                properties.setNum_changes(rsi.getInt("num_changes"));
+                point_edition.setGeometry(geometry);
+
+                point_edition.setProperties(properties);
+
+
+                list.add(point_edition);
+            }
+            pstmti.close();
+            rsi.close();
+
+        } catch (SQLException ex) {
+            System.out.println("Error en Listar Edicion: " + ex);
+        }
+        return list;
+
+    }
+
+    public ArrayList<Edicions> list_edition_month(int id) {
+
+        ArrayList<Edicions> list = new ArrayList<Edicions>();
+
+        try {
+            String sql = "select substring((CAST(((TIMESTAMP WITH TIME ZONE 'epoch' +  INTERVAL '1 second' * closed_at)|| ' ') AS date)|| ''),1,7) as date , \n"
+                    + "count(num_changes) as num_edition, sum(num_changes) as num_changes from  osm_changeset  where user_id=" + id + "\n"
+                    + " GROUP BY substring((CAST(((TIMESTAMP WITH TIME ZONE 'epoch' +  INTERVAL '1 second' * closed_at)|| ' ') AS date)|| ''),1,7) \n"
+                    + " ORDER BY substring((CAST(((TIMESTAMP WITH TIME ZONE 'epoch' +  INTERVAL '1 second' * closed_at)|| ' ') AS date)|| ''),1,7)";
+
+            pstmt = conn.prepareStatement(sql);
+            rs = pstmt.executeQuery();
+            int num = 0;
+            while (rs.next()) {
+                Edicions edicion = new Edicions();
+
+                edicion.setDate(rs.getString("date"));
+                edicion.setNum_edicion(rs.getInt("num_edition"));
+                edicion.setNum_changes(rs.getInt("num_changes"));
+
+                list.add(edicion);
+            }
+
+            pstmt.close();
+            rs.close();
+        } catch (SQLException ex) {
+            System.out.println("Error en en Edicion" + ex);
+        }
+        return list;
+
+    }
+
+    public String find_osm_user(int id) {
+
+        String osm_user = "";
+        try {
+            String sql = "SELECT osm_user from osm_changeset where  user_id=" + id + " limit 1;";
+
+            pstmt = conn.prepareStatement(sql);
+            rs = pstmt.executeQuery();          
+            while (rs.next()) {
+                osm_user = rs.getString("osm_user");
+            }
+
+            pstmt.close();
+            rs.close();
+        } catch (SQLException ex) {
+            System.out.println("Error en en Edicion" + ex);
+        }
+        return osm_user;
 
     }
 }

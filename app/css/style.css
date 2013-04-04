@@ -22,7 +22,7 @@ Map
 .contain-left{
   position:absolute;
   background-color: #fff;
-  top:0px;
+  bottom:0px;
   left: :0px;
   width:200px;
   height:auto;
@@ -32,7 +32,7 @@ Map
 .contain-rigth{
    position:absolute;
   background-color: #fff;
-  top:0px;
+  bottom:0px;
   right:0px;
   width:200px;
   height:auto;
@@ -76,3 +76,26 @@ Loading
   z-index: 999999;
   position: absolute;
   }
+
+
+/*
+
+.marker-tooltip
+*/
+/*.marker-tooltip{
+  position:fixed;
+  top:0px;
+  left:0px;
+}*/
+
+.marker-popup{
+  position:fixed;
+  top:0px;
+  left:0px;
+  z-index: 100;
+}
+
+.well-toltip{
+    top:0px;
+  left:0px;
+}

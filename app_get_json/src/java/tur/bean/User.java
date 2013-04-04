@@ -14,10 +14,11 @@ import java.util.ArrayList;
  */
 public class User {
 
+   String type= "FeatureCollection";
     int user_id;
-    String osm_user;
-    ArrayList<Edicion> edicion;
-
+    String osm_user;   
+    ArrayList<Edicions>  editions ;
+    ArrayList<Points_edition> features;
     public int getUser_id() {
         return user_id;
     }
@@ -34,13 +35,24 @@ public class User {
         this.osm_user = osm_user;
     }
 
-    public ArrayList<Edicion> getEdicion() {
-        return edicion;
+    public ArrayList<Edicions> getEditions() {
+        return editions;
     }
 
-    public void setEdicion(ArrayList<Edicion> edicion) {
-        this.edicion = edicion;
+    public void setEditions(ArrayList<Edicions> editions) {
+        this.editions = editions;
     }
+
+    public ArrayList<Points_edition> getFeatures() {
+        return features;
+    }
+
+    public void setFeatures(ArrayList<Points_edition> features) {
+        this.features = features;
+    }
+    
+
+
     
     
 }

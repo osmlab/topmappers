@@ -17,6 +17,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import tur.bean.User;
 import tur.datasource.BDConnecion;
 import tur.manager.ManagerUser;
 
@@ -66,21 +67,31 @@ public class SListUsers extends HttpServlet {
             // System.out.println("length--" + list_iusers.size());
             for (int i = 0; i < list_iusers.size(); i++) {
 
-                String id_user = list_iusers.get(i) + "";
 
-                list = managerUser.list_User_by_Edicion(Integer.parseInt(id_user));
-                String json = new Gson().toJson(list);
+
+                String id_user = list_iusers.get(i) + "";
+                User user = new User();
+                user.setUser_id(Integer.parseInt(id_user));
+
+                String osm_user = managerUser.find_osm_user(Integer.parseInt(id_user));
+                user.setOsm_user(osm_user);
+
+                user.setEditions(managerUser.list_edition_month(Integer.parseInt(id_user)));
+                user.setFeatures(managerUser.list_points_edition(Integer.parseInt(id_user)));
+
+
+
+                String json = new Gson().toJson(user);
                 response.setContentType("application/json");
                 response.setCharacterEncoding("UTF-8");
                 //write a json file
                 File outputFile = new File(getServletContext().getRealPath("/") + "user" + id_user + ".json");
                 FileWriter fout = new FileWriter(outputFile);
-                fout.write("{\n"
-                        + "	\"type\": \"FeatureCollection\",\n"
-                        + "	\"features\":" + json + "}");
-                /*fout.write("callback({\n"
-                        + "	\"type\": \"FeatureCollection\",\n"
-                        + "	\"features\":" + json + "})");*/
+                /*fout.write("{\n"
+                 + "	\"type\": \"FeatureCollection\",\n"
+                 + "	\"features\":" + json + "}");*/
+
+                fout.write("callback(" + json + ")");
                 fout.close();
 
                 System.out.println(outputFile.getAbsolutePath());

@@ -4,15 +4,18 @@
  */
 package tur.bean;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author ruben
  */
-public class User_by_Edicion {
+public class Points_edition {
 
     Geometry geometry;
     Properties properties;
-    String type;
+    //String type;
+    
     
     /*
      "type": "FeatureCollection",
@@ -46,11 +49,6 @@ public class User_by_Edicion {
         this.properties = properties;
     }
 
-    public String getType() {
-        return type;
-    }
 
-    public void setType(String type) {
-        this.type = type;
-    }
+    
 }
