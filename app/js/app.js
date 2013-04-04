@@ -12,18 +12,18 @@ map.setZoomRange(0, 18);
 
 mm_user(listUser);
 
-mm_file_user('user722137.json', mapData);
+//mm_file_user('user722137.json', mapData);
 
 
 function listUser(f) {
     var list_usser = f;
     //console.log(list_usser);
     var o = '';
-    for (var i = 0; i < list_usser.length - 75; i++) {
+    for (var i = 91; i < list_usser.length ; i++) {
         o += '<li  id="' + list_usser[i].user_id + '"><a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].osm_user + '</a></li>';
     };
     //console.log(o);
-    $('ul').append(o);
+    $('#userlayers').append(o);
 }
 
 
@@ -75,7 +75,7 @@ function newMarker() {
 
 simplestyle_factory_rub = function(feature) {
     var sizes = {
-        small: [15, 20],
+        small: [10, 10],
         medium: [30, 70],
         large: [35, 90]
     };
@@ -85,31 +85,43 @@ simplestyle_factory_rub = function(feature) {
     var color = fp['marker-color'] || '7e7e7e';
     color = color.replace('#', '');
     var d = document.createElement('img');
-    d.width = sizes[size][0];
-    d.height = sizes[size][1];
+    //d.width = sizes[size][0];
+   // d.height = sizes[size][1];
     d.className = 'simplestyle-marker';
     d.alt = fp.title || '';
     d.src = 'http://dl.dropbox.com/u/43116811/json_user/icon.png';
     var ds = d.style;
     ds.position = 'absolute';
-    ds.clip = 'rect(auto auto ' + (sizes[size][1] * 0.75) + 'px auto)';
-    ds.marginTop = -((sizes[size][1]) / 2) + 'px';
-    ds.marginLeft = -(sizes[size][0] / 2) + 'px';
+    //ds.clip = 'rect(auto auto ' + (sizes[size][1] * 0.75) + 'px auto)';
+   // ds.marginTop = -((sizes[size][1]) / 2) + 'px';
+    //ds.marginLeft = -(sizes[size][0] / 2) + 'px';
     ds.cursor = 'pointer';
     ds.pointerEvents = 'all';
     return d;
 };
 
 $(document).ready(function() {
-
+$('#map').removeClass('loading');
 
     $('#userlayers').on('click', 'li', function(e) {
 
         var file_user = 'user' + $(this).attr('id') + '.json';
-         $('#map').addClass('loading');
+        $('#map').addClass('loading');
         mm_file_user(file_user, mapData);
-       
 
+    });
+
+    $('#userlayers2').on('click', 'li', function(e) {
+
+        var mbtiles_id = 'user' + $(this).attr('id');
+        $('#map').addClass('loading');
+
+        if (map.getLayers().length == 2) {
+            map.removeLayerAt(1);
+        }
+
+        map.addLayer(mapbox.layer().id('ruben.' + mbtiles_id));
+        $('#map').removeClass('loading');
 
     });
 

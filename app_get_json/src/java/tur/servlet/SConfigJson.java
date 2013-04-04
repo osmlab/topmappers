@@ -98,15 +98,16 @@ public class SConfigJson extends HttpServlet {
                         + "    \"MBmeta\": {}\n"
                         + "}";
 
-                
-                if(i==99){
+
+                if (i == 99) {
                     query += a_proyect;
-                }else{
-                 query += a_proyect+",";
+                } else {
+                    query += a_proyect + ",";
                 }
-               
-                    
-                
+
+
+                /*String a_proyect ="<li id='"+id_user+"'><a hre='#"+id_user+"'></a></li>";
+                 query += a_proyect;*/
 
             }
 
@@ -114,6 +115,7 @@ public class SConfigJson extends HttpServlet {
 
 
             File outputFile = new File(getServletContext().getRealPath("/") + "config.json");
+            //  File outputFile = new File(getServletContext().getRealPath("/") + "li.json");
             FileWriter fout = new FileWriter(outputFile);
             fout.write("[" + query + "]");
             fout.close();
