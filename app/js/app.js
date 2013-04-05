@@ -178,16 +178,11 @@ $(document).ready(function() {
     $('#userlayers2').on('click', 'li', function(e) {
 
         var mbtiles_id = 'user' + $(this).attr('id');
-        alert(mbtiles_id);
         $('#map').addClass('loading');
-
         if (map.getLayers().length == 2) {
             map.removeLayerAt(1);
         }
-
-
         map.addLayer(mapbox.layer().id('ruben.' + mbtiles_id, function() {
-
             map.interaction.auto();
         }));
         map.interaction.refresh()
