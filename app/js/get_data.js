@@ -79,6 +79,7 @@ function mm_file_user(file_user,callback) {
         throw 'CSV: reqwest required for mm_edit';
     }
     var url = 'http://rub21.github.com/report_top_us/json_app/'+file_user+'?callback=callback';
+    console.log(url);
     reqwest({
         url: url,
         type: 'jsonp',
@@ -88,7 +89,8 @@ function mm_file_user(file_user,callback) {
     });
 
     function response(x) {
-    // console.log(x.features)
-        return callback(x.features);
+    
+  console.log(x);
+        return callback(x);
     }
 }

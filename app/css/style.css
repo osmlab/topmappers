@@ -22,10 +22,12 @@ Map
 .contain-left{
   position:absolute;
   background-color: #fff;
-  bottom:0px;
+  top:0px;
   left: :0px;
   width:200px;
-  height:auto;
+  height:400px;
+  max-height:400px;
+  overflow-y:scroll;
   z-index: 2;
 }
 
@@ -78,24 +80,9 @@ Loading
   }
 
 
-/*
+#draw_area{
+ position:absolute;
+ bottom:0px;
+ left:0px;
 
-.marker-tooltip
-*/
-/*.marker-tooltip{
-  position:fixed;
-  top:0px;
-  left:0px;
-}*/
-
-.marker-popup{
-  position:fixed;
-  top:0px;
-  left:0px;
-  z-index: 100;
-}
-
-.well-toltip{
-    top:0px;
-  left:0px;
 }
