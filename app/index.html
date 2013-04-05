@@ -8,10 +8,18 @@
 </head>
 
 <body>
+
+    <div class="navbar">
+        <div class="navbar-inner">
+            <a class="brand" href="#">Top 100 Mapers in US</a>
+            <ul class="nav">       
+            </ul>
+        </div>
+    </div>
+
     <div id="map"  class="loading"></div>
 
-    <div class='contain-left well'>
-        <h5>Top 100 Mapers in US with Json</h5>
+    <div class='contain-left well'> 
         <ul id="userlayers"></ul>
     </div>
 
@@ -48,7 +56,9 @@
         </ul>
 
     </div>
-    <div id="draw_area" ></div>
+    <div class="well draw">
+        <div id="draw_area"></div>
+    </div>
 
     <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.js'></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>

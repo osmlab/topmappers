@@ -9,53 +9,37 @@ map.centerzoom({
 }, 5);
 
 map.setZoomRange(0, 18);
-
 map.ui.zoomer.add();
 map.ui.zoombox.add();
 map.ui.hash.add();
-
 mm_user(listUser);
 
-//mm_file_user('user722137.json', mapData);
-
+mm_file_user('user590362.json', mapData);
 
 function listUser(f) {
     var list_usser = f;
-    //console.log(list_usser);
     var o = '';
     for (var i = 0; i < list_usser.length; i++) {
         o += '<li  id="' + list_usser[i].user_id + '"><a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].osm_user + '</a></li>';
     };
-    //console.log(o);
     $('#userlayers').append(o);
 }
 
-
 function listEdit(f) {
     features = f;
-    console.log(features);
-
+    //console.log(features);
 }
 
-
-
 function mapData(f) {
-
-    stadistis(f.editions);
+    stadistis(f.editions, f.osm_user);
     if (map.getLayers().length == 2) {
         map.removeLayerAt(1);
     }
-
-
-
     map.interaction.refresh()
     var features_edit = [];
     features_edit = f.features;
-
     markerLayer = mapbox.markers.layer().features(features_edit);
-
     markerLayer.factory(function(m) {
-        //var elem = mapbox.markers.simplestyle_factory(m);
         var elem = simplestyle_factory_rub(m);
         MM.addEvent(elem, 'click', function(e) {
             map.ease.location({
@@ -63,14 +47,11 @@ function mapData(f) {
                 lon: m.geometry.coordinates[0]
             }).zoom(map.zoom()).optimal();
         });
-
         return elem;
     });
 
     interaction = mapbox.markers.interaction(markerLayer);
     map.addLayer(markerLayer);
-
-
 
     interaction.formatter(function(feature) {
         var o = '<div class="well-toltip">' +
@@ -78,9 +59,6 @@ function mapData(f) {
             '</div>';
         return o;
     });
-
-
-
     $('#map').removeClass('loading');
 }
 
@@ -116,15 +94,11 @@ simplestyle_factory_rub = function(feature) {
     return d;
 };
 
-
-
 google.load("visualization", "1", {
     packages: ["corechart"]
 });
 
-
-function stadistis(f) {
-
+function stadistis(f, osm_user) {
     var rowArray = [];
     for (var i = 0; i < f.length; i++) {
         rowArray.push([f[i].d, f[i].ne]);
@@ -133,16 +107,48 @@ function stadistis(f) {
     drawChart();
 
     function drawChart() {
+
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Date');
         data.addColumn('number', 'Num Editions');
         data.addRows(rowArray);
         var chart = new google.visualization.AreaChart(document.getElementById('draw_area'));
 
+        var options = {
+            width: 600,
+            height: 180,
+            title: 'Editions by Month from user : ' +osm_user ,
+            hAxis: {
+                title: 'Date',
+                titleTextStyle: {
+                    color: '#404040'
+                }
+            },
+            vAxis: {
+                title: 'Num Editions',
+                titleTextStyle: {
+                    color: '#404040'
+                }
+            },
+            legend: 'none',
+            chartArea:{left:25,top:20, width:"95%",height:"70%"},
+            backgroundColor: 'transparent'
+        };
+
+        chart.draw(data,options);
+    }
+
+
+
+    /*var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Date');
+        data.addColumn('number', 'Num Editions');
+        data.addRows(rowArray);
+        var chart = new google.visualization.AreaChart(document.getElementById('draw_area'));
         chart.draw(data, {
             width: 600,
             height: 180,
-            title: 'Editions by Month',
+            title: 'Editions by Month from '+ osm_user ,
             hAxis: {
                 title: 'Date',
                 titleTextStyle: {
@@ -156,27 +162,19 @@ function stadistis(f) {
                 }
             }
         });
-    }
-
-
+    }*/
 }
 
 
 $(document).ready(function() {
     $('#map').removeClass('loading');
-
     $('#userlayers').on('click', 'li', function(e) {
-
         var file_user = 'user' + $(this).attr('id') + '.json';
         $('#map').addClass('loading');
         mm_file_user(file_user, mapData);
-
     });
 
-
-
     $('#userlayers2').on('click', 'li', function(e) {
-
         var mbtiles_id = 'user' + $(this).attr('id');
         $('#map').addClass('loading');
         if (map.getLayers().length == 2) {
@@ -186,9 +184,6 @@ $(document).ready(function() {
             map.interaction.auto();
         }));
         map.interaction.refresh()
-
         $('#map').removeClass('loading');
-
     });
-
 });

@@ -22,11 +22,11 @@ Map
 .contain-left{
   position:absolute;
   background-color: #fff;
-  top:0px;
+  top:35px;
   left: :0px;
   width:200px;
-  height:400px;
-  max-height:400px;
+  height:350px;
+  max-height:350px;
   overflow-y:scroll;
   z-index: 2;
 }
@@ -80,9 +80,35 @@ Loading
   }
 
 
-#draw_area{
+.draw{
  position:absolute;
  bottom:0px;
  left:0px;
 
 }
+
+.well{
+  bottom:-15px;
+}
+
+.navbar{
+  position:absolute;
+  top:0px;
+  z-index: 12;
+  width:100%;
+}
+.navbar a{
+  font-size: 25px;
+}
+
+.map-tooltip {
+  width:100px;
+  height:100px;
+
+  }/*map-tooltip-0*/
+
+  .map-tooltip h3 {
+font-size: 14px;
+line-height: 14px;
+
+  }
