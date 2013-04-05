@@ -127,7 +127,7 @@ function stadistis(f) {
 
     var rowArray = [];
     for (var i = 0; i < f.length; i++) {
-        rowArray.push([f[i].date, f[i].num_edicion]);
+        rowArray.push([f[i].d, f[i].ne]);
     };
 
     drawChart();
