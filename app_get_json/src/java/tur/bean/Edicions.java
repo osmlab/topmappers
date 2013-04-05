@@ -6,32 +6,32 @@ package tur.bean;
  */
 public class Edicions {
 
-    String date;
-    int num_edicion;
-    int num_changes;
+    String d;//date
+    int ne;
+    int nc;
 
-    public String getDate() {
-        return date;
+    public String getD() {
+        return d;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setD(String d) {
+        this.d = d;
     }
 
-    public int getNum_edicion() {
-        return num_edicion;
+    public int getNe() {
+        return ne;
     }
 
-    public void setNum_edicion(int num_edicion) {
-        this.num_edicion = num_edicion;
+    public void setNe(int ne) {
+        this.ne = ne;
     }
 
-    public int getNum_changes() {
-        return num_changes;
+    public int getNc() {
+        return nc;
     }
 
-    public void setNum_changes(int num_changes) {
-        this.num_changes = num_changes;
+    public void setNc(int nc) {
+        this.nc = nc;
     }
     
 }

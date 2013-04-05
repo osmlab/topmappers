@@ -82,11 +82,25 @@ public class DAOUser {
                 double min_lat = rsi.getDouble("min_lat");
                 double max_lon = rsi.getDouble("max_lon");
                 double max_lat = rsi.getDouble("max_lat");
-                double[] cordinates = new double[]{(min_lon + max_lon) / 2, (min_lat + max_lat) / 2};
+                
+                double lon=(min_lon + max_lon) / 2;
+                double lat = (min_lat + max_lat) / 2;
+                
+                 System.out.println("lon Before"+lon);
+                 System.out.println("Lat Before"+lat);
+                
+                lon= Math.round(lon*1000)/1000.0d;
+                lat= Math.round(lat*1000)/1000.0d;
+                
+                
+                 System.out.println("lon "+lon);
+                 System.out.println("Lat "+lat);
+                
+                double[] cordinates = new double[]{lon, lat};
 
-                geometry.setType("Point");
+                //geometry.setType("Point");
                 geometry.setCoordinates(cordinates);
-                properties.setNum_changes(rsi.getInt("num_changes"));
+                properties.setNc(rsi.getInt("num_changes"));
                 point_edition.setGeometry(geometry);
 
                 point_edition.setProperties(properties);
@@ -120,9 +134,9 @@ public class DAOUser {
             while (rs.next()) {
                 Edicions edicion = new Edicions();
 
-                edicion.setDate(rs.getString("date"));
-                edicion.setNum_edicion(rs.getInt("num_edition"));
-                edicion.setNum_changes(rs.getInt("num_changes"));
+                edicion.setD(rs.getString("date"));
+                edicion.setNe(rs.getInt("num_edition"));
+                edicion.setNc(rs.getInt("num_changes"));
 
                 list.add(edicion);
             }

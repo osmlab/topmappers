@@ -12,13 +12,13 @@ public class Properties {
 
  
 
-    int num_changes;
-    public int getNum_changes() {
-        return num_changes;
+    int nc;
+    public int getNc() {
+        return nc;
     }
 
-    public void setNum_changes(int num_changes) {
-        this.num_changes = num_changes;
+    public void setNc(int nc) {
+        this.nc = nc;
     }
     
 }
