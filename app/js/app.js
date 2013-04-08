@@ -4,17 +4,16 @@ var map_id = 'ruben.map-5164bfio',
     map = mapbox.map('map');
 map.addLayer(mapbox.layer().id(map_id));
 map.centerzoom({
-    lat: 37.504,
-    lon: -94.668
+    lat: 38.163,
+    lon: -104.907
 }, 5);
 
-map.setZoomRange(0, 18);
+
+map.setZoomRange(0, 12);
 map.ui.zoomer.add();
 map.ui.zoombox.add();
 map.ui.hash.add();
 mm_user(listUser);
-
-//mm_file_user('user590362.json', mapData);
 
 function listUser(f) {
     var list_usser = f;
@@ -23,85 +22,21 @@ function listUser(f) {
         o += '<li  id="' + list_usser[i].user_id + '"><a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].osm_user + '</a></li>';
     };
     $('#userlayers').append(o);
-}
-
-function listEdit(f) {
-    features = f;
-    //console.log(features);
-}
-
-function mapData(f) {
-    stadistis(f.editions, f.osm_user);
-    if (map.getLayers().length == 2) {
-        map.removeLayerAt(1);
-    }
-    map.interaction.refresh()
-    var features_edit = [];
-    features_edit = f.features;
-    markerLayer = mapbox.markers.layer().features(features_edit);
-    markerLayer.factory(function(m) {
-        var elem = simplestyle_factory_rub(m);
-        MM.addEvent(elem, 'click', function(e) {
-            map.ease.location({
-                lat: m.geometry.coordinates[1],
-                lon: m.geometry.coordinates[0]
-            }).zoom(map.zoom()).optimal();
-        });
-        return elem;
-    });
-
-    interaction = mapbox.markers.interaction(markerLayer);
-    map.addLayer(markerLayer);
-
-    interaction.formatter(function(feature) {
-        var o = '<div class="well-toltip">' +
-            '<p> num changes :' + feature.properties.num_changes + '</p>' +
-            '</div>';
-        return o;
-    });
-    $('#map').removeClass('loading');
-}
-
-function newMarker() {
-    if (window.location.hash == '#new') {
-        $('#new').fadeIn('slow');
-        window.location.hash = '';
-        window.setTimeout(function() {
-            $('#new').fadeOut('slow');
-        }, 4000)
-    }
-}
-
-simplestyle_factory_rub = function(feature) {
-    var sizes = {
-        small: [10, 10],
-        medium: [30, 70],
-        large: [35, 90]
-    };
-    var fp = feature.properties || {};
-    var size = fp['marker-size'] || 'medium';
-    var symbol = fp['marker-symbol'];
-    var color = fp['marker-color'] || '7e7e7e';
-    color = color.replace('#', '');
-    var d = document.createElement('img');
-    d.className = 'simplestyle-marker';
-    d.alt = fp.title || '';
-    d.src = 'http://dl.dropbox.com/u/43116811/json_user/icon.png';
-    var ds = d.style;
-    ds.position = 'absolute';
-    ds.cursor = 'pointer';
-    ds.pointerEvents = 'all';
-    return d;
+    map.addLayer(mapbox.layer().id('ruben.user590362', function() {
+        map.interaction.auto();
+    }));
+    mm_file_user('user590362', stadistis);
 };
 
 google.load("visualization", "1", {
     packages: ["corechart"]
 });
 
-function stadistis(f, osm_user) {
+function stadistis(f) {
+
     var rowArray = [];
-    for (var i = 0; i < f.length; i++) {
-        rowArray.push([f[i].d, f[i].ne]);
+    for (var i = 0; i < f.editions.length; i++) {
+        rowArray.push([f.editions[i].d, f.editions[i].ne]);
     };
 
     drawChart();
@@ -117,7 +52,7 @@ function stadistis(f, osm_user) {
         var options = {
             width: 600,
             height: 180,
-            title: 'Editions by Month from user : ' +osm_user ,
+            title: 'Editions by Month from user : ' + f.osm_user,
             hAxis: {
                 title: 'Date',
                 titleTextStyle: {
@@ -131,11 +66,16 @@ function stadistis(f, osm_user) {
                 }
             },
             legend: 'none',
-            chartArea:{left:25,top:20, width:"95%",height:"70%"},
+            chartArea: {
+                left: 25,
+                top: 20,
+                width: "95%",
+                height: "70%"
+            },
             backgroundColor: 'transparent'
         };
 
-        chart.draw(data,options);
+        chart.draw(data, options);
     }
 
 
@@ -184,7 +124,10 @@ $(document).ready(function() {
         map.addLayer(mapbox.layer().id('ruben.' + mbtiles_id, function() {
             map.interaction.auto();
         }));
-        map.interaction.refresh()
+        map.interaction.refresh();
+        //alert(mbtiles_id);
+        mm_file_user(mbtiles_id, stadistis);
+
         $('#map').removeClass('loading');
     });
 });

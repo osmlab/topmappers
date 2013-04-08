@@ -22,24 +22,16 @@ Map
 .contain-left{
   position:absolute;
   background-color: #fff;
-  top:35px;
+  top:0px;
   left: :0px;
-  width:200px;
-  height:350px;
-  max-height:350px;
+  width:180px;
+  height:100%;
+  max-height:100%;
   overflow-y:scroll;
   z-index: 2;
 }
 
-.contain-rigth{
-   position:absolute;
-  background-color: #fff;
-  bottom:0px;
-  right:0px;
-  width:200px;
-  height:auto;
-  z-index: 2;
-}
+
 
 
 
@@ -83,15 +75,17 @@ Loading
 .draw{
  position:absolute;
  bottom:0px;
- left:0px;
+ right:0px;
+ opacity: 0.9;
 
 }
 
 .well{
-  bottom:-15px;
+ bottom:-15px;
+
 }
 
-.navbar{
+/*.navbar{
   position:absolute;
   top:0px;
   z-index: 12;
@@ -99,7 +93,7 @@ Loading
 }
 .navbar a{
   font-size: 25px;
-}
+}*/
 
 .map-tooltip {
   width:100px;
@@ -107,8 +101,7 @@ Loading
 
   }/*map-tooltip-0*/
 
-  .map-tooltip h3 {
+.map-tooltip h3 {
 font-size: 14px;
 line-height: 14px;
-
-  }
+ }
