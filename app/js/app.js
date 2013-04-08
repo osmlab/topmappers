@@ -14,7 +14,7 @@ map.ui.zoombox.add();
 map.ui.hash.add();
 mm_user(listUser);
 
-mm_file_user('user590362.json', mapData);
+//mm_file_user('user590362.json', mapData);
 
 function listUser(f) {
     var list_usser = f;
@@ -168,13 +168,14 @@ function stadistis(f, osm_user) {
 
 $(document).ready(function() {
     $('#map').removeClass('loading');
+    /*
     $('#userlayers').on('click', 'li', function(e) {
         var file_user = 'user' + $(this).attr('id') + '.json';
         $('#map').addClass('loading');
         mm_file_user(file_user, mapData);
     });
-
-    $('#userlayers2').on('click', 'li', function(e) {
+*/
+    $('#userlayers').on('click', 'li', function(e) {
         var mbtiles_id = 'user' + $(this).attr('id');
         $('#map').addClass('loading');
         if (map.getLayers().length == 2) {

@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/home/ruben/Dropbox/webpages/report_top_us/app_get_json/src/java/tur/dao/DAOUser.java</file>
+        <file>file:/home/ruben/Dropbox/webpages/report_top_us/app_get_json/src/java/tur/bean/Geometry.java</file>
+        <file>file:/home/ruben/Dropbox/webpages/report_top_us/app_get_json/src/java/tur/bean/Points_edition.java</file>
+        <file>file:/home/ruben/Dropbox/webpages/report_top_us/app_get_json/src/java/tur/bean/Properties.java</file>
+        <file>file:/home/ruben/Dropbox/webpages/report_top_us/app_get_json/src/java/tur/bean/Edicions.java</file>
+        <file>file:/home/ruben/Dropbox/webpages/report_top_us/app_get_json/src/java/tur/servlet/SListUsers.java</file>
+        <file>file:/home/ruben/Dropbox/webpages/report_top_us/app_get_json/src/java/tur/servlet/SConfigJson.java</file>
+    </open-files>
 </project-private>
