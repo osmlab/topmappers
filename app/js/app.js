@@ -11,9 +11,7 @@ map.centerzoom({
 var list_usser = [];
 
 //inicialiser
-
-map.addLayer(mapbox.layer().id('ruben.user590362', function() {
-
+map.addLayer(mapbox.layer().id('ruben.user722137', function() {
     map.interaction.auto();
     map.interaction.off('on');
     map.interaction.off('off');
@@ -44,7 +42,7 @@ function listUser(f) {
     list_usser = f;
     var o = '';
     for (var i = 0; i < list_usser.length; i++) {
-        if (i == 2) {
+        if (i == 0) {
             o += '<li  class="active" id="' + list_usser[i].user_id + '"><a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].osm_user + '</a></li>';
 
         } else {
@@ -111,8 +109,8 @@ function stadistis(f) {
 
 $(document).ready(function() {
 
-    mm_file_user('user590362', stadistis);
-    
+    mm_file_user('user722137', stadistis);
+
     $('#userlayers').on('click', 'li', function(e) {
         $('#userlayers li').removeClass('active');
         var mbtiles_id = 'user' + $(this).attr('id');
