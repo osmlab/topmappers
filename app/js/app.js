@@ -11,7 +11,7 @@ map.centerzoom({
 var list_usser = [];
 
 //inicialiser
-mm_file_user('user590362', stadistis);
+
 map.addLayer(mapbox.layer().id('ruben.user590362', function() {
 
     map.interaction.auto();
@@ -111,8 +111,9 @@ function stadistis(f) {
 
 $(document).ready(function() {
 
+    mm_file_user('user590362', stadistis);
+    
     $('#userlayers').on('click', 'li', function(e) {
-
         $('#userlayers li').removeClass('active');
         var mbtiles_id = 'user' + $(this).attr('id');
         $('#map').addClass('loading');
@@ -153,7 +154,7 @@ $(document).ready(function() {
         if (map.getLayers().length == 2) {
             map.removeLayerAt(1);
         }
-       
+
         for (var i = 0; i < list_usser.length; i++) {
             map.addLayer(mapbox.layer().id('ruben.user' + list_usser[i].user_id, function() {
                 map.interaction.auto();
