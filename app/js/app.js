@@ -72,7 +72,8 @@ function stadistis(f) {
                 width: "95%",
                 height: "70%"
             },
-            backgroundColor: 'transparent'
+            backgroundColor: 'transparent',
+            colors:['#B75C30']
         };
 
         chart.draw(data, options);
