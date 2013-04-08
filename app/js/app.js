@@ -8,7 +8,6 @@ map.centerzoom({
     lon: -104.907
 }, 5);
 
-
 map.setZoomRange(0, 12);
 map.ui.zoomer.add();
 map.ui.zoombox.add();
@@ -33,7 +32,6 @@ google.load("visualization", "1", {
 });
 
 function stadistis(f) {
-
     var rowArray = [];
     for (var i = 0; i < f.editions.length; i++) {
         rowArray.push([f.editions[i].d, f.editions[i].ne]);
@@ -42,7 +40,6 @@ function stadistis(f) {
     drawChart();
 
     function drawChart() {
-
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Date');
         data.addColumn('number', 'Num Editions');
@@ -73,49 +70,17 @@ function stadistis(f) {
                 height: "70%"
             },
             backgroundColor: 'transparent',
-            colors:['#B75C30']
+            colors: ['#B75C30']
         };
 
         chart.draw(data, options);
     }
 
-
-
-    /*var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Date');
-        data.addColumn('number', 'Num Editions');
-        data.addRows(rowArray);
-        var chart = new google.visualization.AreaChart(document.getElementById('draw_area'));
-        chart.draw(data, {
-            width: 600,
-            height: 180,
-            title: 'Editions by Month from '+ osm_user ,
-            hAxis: {
-                title: 'Date',
-                titleTextStyle: {
-                    color: '#404040'
-                }
-            },
-            vAxis: {
-                title: 'Num Editions',
-                titleTextStyle: {
-                    color: '#404040'
-                }
-            }
-        });
-    }*/
 }
 
 
 $(document).ready(function() {
     $('#map').removeClass('loading');
-    /*
-    $('#userlayers').on('click', 'li', function(e) {
-        var file_user = 'user' + $(this).attr('id') + '.json';
-        $('#map').addClass('loading');
-        mm_file_user(file_user, mapData);
-    });
-*/
     $('#userlayers').on('click', 'li', function(e) {
         var mbtiles_id = 'user' + $(this).attr('id');
         $('#map').addClass('loading');
@@ -126,9 +91,9 @@ $(document).ready(function() {
             map.interaction.auto();
         }));
         map.interaction.refresh();
-        //alert(mbtiles_id);
         mm_file_user(mbtiles_id, stadistis);
-
         $('#map').removeClass('loading');
+
+
     });
 });
