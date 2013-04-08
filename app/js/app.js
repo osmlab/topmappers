@@ -4,9 +4,17 @@ var map_id = 'ruben.map-5164bfio',
     map = mapbox.map('map');
 map.addLayer(mapbox.layer().id(map_id));
 map.centerzoom({
-    lat: 38.163,
-    lon: -104.907
+    lat: 39.188,
+    lon: -97.575
 }, 5);
+
+var list_usser = [];
+
+//inicialiser
+map.addLayer(mapbox.layer().id('ruben.user590362', function() {
+    map.interaction.auto();
+}));
+mm_file_user('user590362', stadistis);
 
 map.setZoomRange(0, 12);
 map.ui.zoomer.add();
@@ -15,16 +23,19 @@ map.ui.hash.add();
 mm_user(listUser);
 
 function listUser(f) {
-    var list_usser = f;
+    list_usser = f;
     var o = '';
     for (var i = 0; i < list_usser.length; i++) {
-        o += '<li  id="' + list_usser[i].user_id + '"><a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].osm_user + '</a></li>';
+        if (i == 2) {
+            o += '<li  class="active" id="' + list_usser[i].user_id + '"><a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].osm_user + '</a></li>';
+
+        } else {
+            o += '<li  id="' + list_usser[i].user_id + '"><a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].osm_user + '</a></li>';
+        }
     };
+
     $('#userlayers').append(o);
-    map.addLayer(mapbox.layer().id('ruben.user590362', function() {
-        map.interaction.auto();
-    }));
-    mm_file_user('user590362', stadistis);
+    $('#map').removeClass('loading');
 };
 
 google.load("visualization", "1", {
@@ -80,8 +91,9 @@ function stadistis(f) {
 
 
 $(document).ready(function() {
-    $('#map').removeClass('loading');
+
     $('#userlayers').on('click', 'li', function(e) {
+        $('#userlayers li').removeClass('active');
         var mbtiles_id = 'user' + $(this).attr('id');
         $('#map').addClass('loading');
         if (map.getLayers().length == 2) {
@@ -94,6 +106,21 @@ $(document).ready(function() {
         mm_file_user(mbtiles_id, stadistis);
         $('#map').removeClass('loading');
 
-
+        $(this).addClass('active');
     });
+
+    $("#all").click(function() {
+        if (map.getLayers().length == 2) {
+            map.removeLayerAt(1);
+        }
+        for (var i = 0; i < 10; i++) {
+            map.addLayer(mapbox.layer().id('ruben.user' + list_usser[i].user_id, function() {}));
+        };
+        map.interaction.refresh();
+        map.interaction.auto();
+    });
+
+
+    var n_numTabs = $("#map-tooltip h3").length;
+    // alert(n_numTabs)
 });

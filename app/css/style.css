@@ -85,9 +85,23 @@ Loading
 
 }
 
-
-
+.navbar{
+  position:absolute;
+  top:0px;
+  z-index: 12;
+  width:100%;
+}
+/*.navbar a{
+  font-size: 25px;
+}*/
+.dropdown-menu{
+  height:600px;
+  max-height:600px;
+  overflow-y:scroll;
+}
 .map-tooltip {
+  top:48px;
+  right:5px;
   width:100px;
   height:100px;
 
@@ -97,3 +111,8 @@ Loading
 font-size: 14px;
 line-height: 14px;
  }
+
+
+.map-tooltip .edition strong{
+  font-size: 0px;
+}
