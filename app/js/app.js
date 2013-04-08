@@ -39,6 +39,7 @@ map.ui.hash.add();
 mm_user(listUser);
 
 function listUser(f) {
+
     list_usser = f;
     var o = '';
     for (var i = 0; i < list_usser.length; i++) {
@@ -53,6 +54,7 @@ function listUser(f) {
     $('#userlayers').append(o);
     $('#map').removeClass('loading');
 
+
 };
 
 google.load("visualization", "1", {
@@ -60,6 +62,7 @@ google.load("visualization", "1", {
 });
 
 function stadistis(f) {
+
     var rowArray = [];
     for (var i = 0; i < f.editions.length; i++) {
         rowArray.push([f.editions[i].d, f.editions[i].ne]);
@@ -103,7 +106,7 @@ function stadistis(f) {
 
         chart.draw(data, options);
     }
-
+    $('.draw').addClass('well');
 }
 
 
@@ -112,13 +115,13 @@ $(document).ready(function() {
     mm_file_user('user722137', stadistis);
 
     $('#userlayers').on('click', 'li', function(e) {
+
         $('#userlayers li').removeClass('active');
-        var mbtiles_id = 'user' + $(this).attr('id');
         $('#map').addClass('loading');
 
-        if (map.getLayers().length == 2) {
-            map.removeLayerAt(1);
-        }
+        var mbtiles_id = 'user' + $(this).attr('id');
+
+        removelayers();
         map.addLayer(mapbox.layer().id('ruben.' + mbtiles_id, function() {
             map.interaction.auto();
             map.interaction.off('on');
@@ -136,46 +139,38 @@ $(document).ready(function() {
                     mydiv.style.display = 'none';
                 }
             });
-
         }));
-
         map.interaction.refresh();
         mm_file_user(mbtiles_id, stadistis);
         $('#map').removeClass('loading');
         $(this).addClass('active');
-
     });
 
 
 
     $("#all").click(function() {
+        removelayers();
+        //clear stadistic
+        $('#draw_area').empty();
+        $('.draw').removeClass('well');
+        for (var i = 0; i < list_usser.length - 90; i++) {
+            map.addLayer(mapbox.layer().id('ruben.user' + list_usser[i].user_id, function() {}));
+        };
+        map.interaction.refresh();
+        
+    });
+
+
+   function removelayers() {
+        //remove layers
         if (map.getLayers().length == 2) {
             map.removeLayerAt(1);
         }
-
-        for (var i = 0; i < list_usser.length; i++) {
-            map.addLayer(mapbox.layer().id('ruben.user' + list_usser[i].user_id, function() {
-                map.interaction.auto();
-                map.interaction.off('on');
-                map.interaction.off('off');
-                map.interaction.on({
-                    on: function(o) {
-                        var mydiv = document.getElementById('interactive');
-                        mydiv.style.display = 'block';
-                        document.getElementById('osm_user').innerHTML = o.data.osm_user;
-                        document.getElementById('edit_at').innerHTML = o.data.closed_at;
-                        document.getElementById('num_changes').innerHTML = o.data.num_changes;
-                    },
-                    off: function(o) {
-                        var mydiv = document.getElementById('interactive');
-                        mydiv.style.display = 'none';
-                    }
-                });
-
-            }));
-        };
-        map.interaction.refresh();
-
-    });
+        if (map.getLayers().length == 11) {
+            for (var i = 1; i < 11; i++) {
+                map.removeLayerAt(1);
+            };
+        }
+    };
 
 });

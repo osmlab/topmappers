@@ -4,13 +4,9 @@ body {
   margin: 0;
   padding: 0; 
   }
-
-
-
 /*-----------------------------------
 Map
 -------------------------------------*/
-
 #map {
   background-color: #2D2A2A;
   height: 100%;
@@ -30,15 +26,9 @@ Map
   overflow-y:scroll;
   z-index: 2;
 }
-
-
-
-
-
 /*-----------------------------------
 Loading
 -------------------------------------*/
-
 .loading {
   position: relative;
   }
@@ -58,7 +48,6 @@ Loading
   text-indent: 26px;
   width: 80px;
   }
-
 #map.loading:after {
   background-color: #333;
   background-color: rgba(0,0,0,0.75);
@@ -70,33 +59,22 @@ Loading
   z-index: 999999;
   position: absolute;
   }
-
-
 .draw{
  position:absolute;
  bottom:-15px;
- right:0px;
- opacity: 0.9;
-
+ right:0px; 
 }
-
-
-
 .navbar{
   position:absolute;
   top:0px;
   z-index: 12;
   width:100%;
 }
-/*.navbar a{
-  font-size: 25px;
-}*/
 .dropdown-menu{
   height:600px;
   max-height:600px;
   overflow-y:scroll;
 }
-
 #interactive{
   display: none;
   position:absolute;
@@ -118,8 +96,6 @@ Loading
 #interactive .span4{
   width:85px;
 }
-
-
 #interactive .left{
   font-weight: bold;
 }
