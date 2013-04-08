@@ -74,16 +74,13 @@ Loading
 
 .draw{
  position:absolute;
- bottom:0px;
+ bottom:-15px;
  right:0px;
  opacity: 0.9;
 
 }
 
-.well{
- bottom:-15px;
 
-}
 
 .navbar{
   position:absolute;
@@ -99,20 +96,30 @@ Loading
   max-height:600px;
   overflow-y:scroll;
 }
-.map-tooltip {
+
+#interactive{
+  display: none;
+  position:absolute;
+  width:180px;
+  height:auto;
+ /* max-height: 95px;*/
   top:48px;
-  right:5px;
-  width:100px;
-  height:100px;
+  right:10px;
+  font-size:12px;
+  z-index:99999;
+  color:#000;    
+  background:#fff;
+}
 
-  }/*map-tooltip-0*/
+#interactive.well{
+  padding:10px;
+}
 
-.map-tooltip h3 {
-font-size: 14px;
-line-height: 14px;
- }
+#interactive .span4{
+  width:85px;
+}
 
 
-.map-tooltip .edition strong{
-  font-size: 0px;
+#interactive .left{
+  font-weight: bold;
 }

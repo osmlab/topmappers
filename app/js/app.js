@@ -12,9 +12,26 @@ var list_usser = [];
 
 //inicialiser
 map.addLayer(mapbox.layer().id('ruben.user590362', function() {
+
     map.interaction.auto();
+    map.interaction.off('on');
+    map.interaction.off('off');
+    map.interaction.on({
+        on: function(o) {
+            var mydiv = document.getElementById('interactive');
+            mydiv.style.display = 'block';
+            document.getElementById('osm_user').innerHTML = o.data.osm_user;
+            document.getElementById('edit_at').innerHTML = o.data.closed_at;
+            document.getElementById('num_changes').innerHTML = o.data.num_changes;
+        },
+        off: function(o) {
+            var mydiv = document.getElementById('interactive');
+            mydiv.style.display = 'none';
+        }
+    });
+
 }));
-mm_file_user('user590362', stadistis);
+
 
 map.setZoomRange(0, 12);
 map.ui.zoomer.add();
@@ -36,6 +53,7 @@ function listUser(f) {
 
     $('#userlayers').append(o);
     $('#map').removeClass('loading');
+    mm_file_user('user590362', stadistis);
 };
 
 google.load("visualization", "1", {
@@ -60,7 +78,7 @@ function stadistis(f) {
         var options = {
             width: 600,
             height: 180,
-            title: 'Editions by Month from user : ' + f.osm_user,
+            title: 'Edit by Month from user : ' + f.osm_user,
             hAxis: {
                 title: 'Date',
                 titleTextStyle: {
@@ -93,21 +111,42 @@ function stadistis(f) {
 $(document).ready(function() {
 
     $('#userlayers').on('click', 'li', function(e) {
+
         $('#userlayers li').removeClass('active');
         var mbtiles_id = 'user' + $(this).attr('id');
         $('#map').addClass('loading');
+
         if (map.getLayers().length == 2) {
             map.removeLayerAt(1);
         }
         map.addLayer(mapbox.layer().id('ruben.' + mbtiles_id, function() {
             map.interaction.auto();
+            map.interaction.off('on');
+            map.interaction.off('off');
+            map.interaction.on({
+                on: function(o) {
+                    var mydiv = document.getElementById('interactive');
+                    mydiv.style.display = 'block';
+                    document.getElementById('osm_user').innerHTML = o.data.osm_user;
+                    document.getElementById('edit_at').innerHTML = o.data.closed_at;
+                    document.getElementById('num_changes').innerHTML = o.data.num_changes;
+                },
+                off: function(o) {
+                    var mydiv = document.getElementById('interactive');
+                    mydiv.style.display = 'none';
+                }
+            });
+
         }));
+
         map.interaction.refresh();
         mm_file_user(mbtiles_id, stadistis);
         $('#map').removeClass('loading');
-
         $(this).addClass('active');
+
     });
+
+
 
     $("#all").click(function() {
         if (map.getLayers().length == 2) {
@@ -120,7 +159,4 @@ $(document).ready(function() {
         map.interaction.auto();
     });
 
-
-    var n_numTabs = $("#map-tooltip h3").length;
-    // alert(n_numTabs)
 });
