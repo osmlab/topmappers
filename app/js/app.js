@@ -152,16 +152,32 @@ $(document).ready(function() {
         removelayers();
         //clear stadistic
         $('#draw_area').empty();
+
         $('.draw').removeClass('well');
-        for (var i = 0; i < list_usser.length - 90; i++) {
-            map.addLayer(mapbox.layer().id('ruben.user' + list_usser[i].user_id, function() {}));
-        };
+
+        map.addLayer(mapbox.layer().id('ruben.users', function() {
+            map.interaction.auto();
+            map.interaction.off('on');
+            map.interaction.off('off');
+            map.interaction.on({
+                on: function(o) {
+                    var mydiv = document.getElementById('interactive');
+                    mydiv.style.display = 'block';
+                    document.getElementById('osm_user').innerHTML = o.data.osm_user;
+                    document.getElementById('edit_at').innerHTML = o.data.closed_at;
+                    document.getElementById('num_changes').innerHTML = o.data.num_changes;
+                },
+                off: function(o) {
+                    var mydiv = document.getElementById('interactive');
+                    mydiv.style.display = 'none';
+                }
+            });
+        }));
         map.interaction.refresh();
-        
     });
 
 
-   function removelayers() {
+    function removelayers() {
         //remove layers
         if (map.getLayers().length == 2) {
             map.removeLayerAt(1);

@@ -45,7 +45,7 @@ public class SListUsers extends HttpServlet {
 
 
         try {
-              list_iusers = managerUser.list_idUsers();
+              list_iusers = managerUser.list_idUsers();      
               for (int i = 0; i < list_iusers.size(); i++) {
                 String id_user = list_iusers.get(i) + "";
                 list = managerUser.list_User_by_Edicion(Integer.parseInt(id_user));

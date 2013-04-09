@@ -24,6 +24,10 @@
         <servlet-name>SConfigJson</servlet-name>
         <servlet-class>tur.servlet.SConfigJson</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Slist_allUsers</servlet-name>
+        <servlet-class>tur.servlet.Slist_allUsers</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SListUsers</servlet-name>
         <url-pattern>/SListUsers</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>SConfigJson</servlet-name>
         <url-pattern>/SConfigJson</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Slist_allUsers</servlet-name>
+        <url-pattern>/Slist_allUsers</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
