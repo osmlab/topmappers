@@ -1,7 +1,6 @@
 callback({
-	"type": "FeatureCollection",
-	"user_id": 362111,
-	"osm_user": "Mele Sax-Barnett",
+	"type": "FeatureCollection",	
+	"osm_user": "ALl Users",
 	"editions": [{
 		"d": "2012-01",
 		"ne": 15350,
