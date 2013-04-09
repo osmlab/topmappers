@@ -64,10 +64,13 @@ google.load("visualization", "1", {
 function stadistis(f) {
 
     var rowArray = [];
+    var num_edition = 0;
     for (var i = 0; i < f.editions.length; i++) {
         rowArray.push([f.editions[i].d, f.editions[i].ne]);
+        num_edition = num_edition + f.editions[i].ne;
     };
 
+    var sp = "              ";
     drawChart();
 
     function drawChart() {
@@ -80,7 +83,7 @@ function stadistis(f) {
         var options = {
             width: 600,
             height: 180,
-            title: 'Edit by Month from user : ' + f.osm_user,
+            title: 'Edit by Month from user : ' + f.osm_user + '-----------------------Num of Edit:' + num_edition,
             hAxis: {
                 title: 'Date',
                 titleTextStyle: {
