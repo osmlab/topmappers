@@ -83,7 +83,7 @@ function stadistis(f) {
         var options = {
             width: 600,
             height: 180,
-            title: 'Edit by Month from user : ' + f.osm_user + '-----------------------Num of Edit:' + num_edition,
+            title: 'Edit by Month from user : ' + f.osm_user ,
             hAxis: {
                 title: 'Date',
                 titleTextStyle: {
@@ -175,8 +175,10 @@ $(document).ready(function() {
                     mydiv.style.display = 'none';
                 }
             });
+
         }));
         map.interaction.refresh();
+        mm_file_user('users', stadistis);
     });
 
 

@@ -1,6 +1,6 @@
 callback({
 	"type": "FeatureCollection",	
-	"osm_user": "ALl Users",
+	"osm_user": "All Users",
 	"editions": [{
 		"d": "2012-01",
 		"ne": 15350,
