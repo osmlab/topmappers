@@ -69,8 +69,14 @@ function stadistis(f) {
         rowArray.push([f.editions[i].d, f.editions[i].ne]);
         num_edition = num_edition + f.editions[i].ne;
     };
+ 
+    var title = '';
+    if (f.osm_user === 'All Users') {
+        title = 'Edit by Month from : ' + f.osm_user ;
+    } else {
+        title = 'Edit by Month from user : ' + f.osm_user ;
+    }
 
-    var sp = "              ";
     drawChart();
 
     function drawChart() {
@@ -83,7 +89,7 @@ function stadistis(f) {
         var options = {
             width: 600,
             height: 180,
-            title: 'Edit by Month from user : ' + f.osm_user ,
+            title: title,
             hAxis: {
                 title: 'Date',
                 titleTextStyle: {

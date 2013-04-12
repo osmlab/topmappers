@@ -78,9 +78,6 @@ public class SListUsers extends HttpServlet {
 
                 user.setEditions(managerUser.list_edition_month(Integer.parseInt(id_user)));
                 //user.setFeatures(managerUser.list_points_edition(Integer.parseInt(id_user)));
-
-
-
                 String json = new Gson().toJson(user);
                 response.setContentType("application/json");
                 response.setCharacterEncoding("UTF-8");
