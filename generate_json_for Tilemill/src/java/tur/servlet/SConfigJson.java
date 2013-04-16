@@ -36,27 +36,172 @@ public class SConfigJson extends HttpServlet {
         BDConnecion conexion = new BDConnecion(ctx);
         managerUser = new ManagerUser(conexion);
         List list_iusers = new LinkedList();
+        List list = new LinkedList();
 
         try {
 
-            list_iusers = managerUser.list_idUsers();
-            // System.out.println("length--" + list_iusers.size());
-            String query = "";
-            for (int i = 0; i < list_iusers.size(); i++) {
+            /* list_iusers = managerUser.list_idUsers();
+             // System.out.println("length--" + list_iusers.size());
+             String query = "";
+             for (int i = 0; i < list_iusers.size(); i++) {
 
-                String id_user = list_iusers.get(i) + "";
+             String id_user = list_iusers.get(i) + "";
+
+             String a_proyect = "{\n"
+             + "    \"source\": \"mapers\",\n"
+             + "    \"destination\": \"user" + id_user + "\",\n"
+             + "    \"format\": \"mbtiles\", \n"
+             + "    \"mml\": {\n"
+             + "        \"bounds\": [-127.9687,\n"
+             + "        24.6071, -62.2266,\n"
+             + "        49.6676],\n"
+             + "        \"center\": [-98.6133,\n"
+             + "        39.504,\n"
+             + "        3],\n"
+             + "        \"format\": \"png\",\n"
+             + "        \"interactivity\": {\n"
+             + "            \"layer\": \"user\",\n"
+             + "            \"template_teaser\": \"   <h3> <strong>User :</strong>\\n        {{{osm_user}}}\\n    </h3> \\n    <h3> <strong>Edition at :</strong>\\n        {{{closed_at}}}\\n    </h3> \\n    <h3>\\n        <strong>Num Changes  :</strong>\\n        {{{num_changes}}}\\n    </h3>\\n \",\n"
+             + "            \"fields\": [\n"
+             + "                \"user_id\",\n"
+             + "                \"osm_user\",\n"
+             + "                \"closed_at\",\n"
+             + "                \"num_changes\"]\n"
+             + "        },\n"
+             + "        \"minzoom\": 0,\n"
+             + "        \"maxzoom\": 12,\n"
+             + "        \"srs\": \"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over\",\n"
+             + "        \"Stylesheet\": [\n"
+             + "            \"style.mss\"],\n"
+             + "        \"Layer\": [{\n"
+             + "            \"geometry\": \"point\",\n"
+             + "            \"extent\": [-108.3869607,\n"
+             + "            25.325613900000004, -80.9186574,\n"
+             + "            36.1901764],\n"
+             + "            \"id\": \"user\",\n"
+             + "            \"class\": \"\",\n"
+             + "            \"Datasource\": {\n"
+             + "                \"file\": \"/home/ruben/Dropbox/webpages/report_top_us/json/user" + id_user + ".json\"\n"
+             + "            },\n"
+             + "            \"srs-name\": \"WGS84\",\n"
+             + "            \"srs\": \"+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs\",\n"
+             + "            \"advanced\": {},\n"
+             + "            \"name\": \"user\"\n"
+             + "        }],\n"
+             + "        \"scale\": 1,\n"
+             + "        \"metatile\": 2,\n"
+             + "        \"name\": \"user" + id_user + "\",\n"
+             + "        \"description\": \"\",\n"
+             + "        \"attribution\": \"\",\n"
+             + "        \"legend\": \"\"\n"
+             + "    },\n"
+             + "    \"cartoVars\": {},\n"
+             + "    \"MBmeta\": {}\n"
+             + "}";
+
+
+             if (i == 51) {
+             query += a_proyect;
+             } else {
+             query += a_proyect + ",";
+             }
+           
+
+             }
+
+
+
+
+             File outputFile = new File(getServletContext().getRealPath("/") + "config.json");
+      
+             FileWriter fout = new FileWriter(outputFile);
+             fout.write("[" + query + "]");
+             fout.close();
+
+             System.out.println(outputFile.getAbsolutePath());*/
+
+
+            int[] list_users = {590362,
+                475877,
+                232126,
+                362111,
+                78871,
+                527355,
+                207745,
+                93788,
+                655680,
+                153669,
+                502142,
+                48060,
+                1679,
+                574654,
+                672878,
+                416346,
+                169004,
+                492311,
+                12434,
+                55916,
+                239998,
+                280679,
+                447903,
+                510836,
+                37392,
+                315015,
+                139555,
+                104962,
+                121241,
+                38487,
+                8703,
+                3392,
+                374193,
+                113450,
+                92286,
+                91347,
+                414318,
+                22925,
+                33757,
+                32952,
+                542403,
+                655800,
+                123633,
+                119881,
+                292665,
+                168517,
+                84054,
+                933061,
+                97431,
+                14293
+            };
+
+
+
+            String query = "";
+            for (int i = 0; i < list_users.length; i++) {
+
+
+
+                list = managerUser.list_User_by_Edicion(list_users[i]);
+                
+                if (list.size() != 0) {
+                    
+                String id_user = list_users[i] + "_ah";
 
                 String a_proyect = "{\n"
                         + "    \"source\": \"mapers\",\n"
                         + "    \"destination\": \"user" + id_user + "\",\n"
                         + "    \"format\": \"mbtiles\", \n"
                         + "    \"mml\": {\n"
-                        + "        \"bounds\": [-127.9687,\n"
-                        + "        24.6071, -62.2266,\n"
-                        + "        49.6676],\n"
-                        + "        \"center\": [-98.6133,\n"
-                        + "        39.504,\n"
-                        + "        3],\n"
+                        + "\"bounds\": [\n"
+                        + "    -179.7363,\n"
+                        + "    15.2418,\n"
+                        + "    -127.7051,\n"
+                        + "    73.3656\n"
+                        + "  ],\n"
+                        + "  \"center\": [\n"
+                        + "    -153.1933,\n"
+                        + "    54.9524,\n"
+                        + "    3\n"
+                        + "  ],"
                         + "        \"format\": \"png\",\n"
                         + "        \"interactivity\": {\n"
                         + "            \"layer\": \"user\",\n"
@@ -98,16 +243,12 @@ public class SConfigJson extends HttpServlet {
                         + "    \"MBmeta\": {}\n"
                         + "}";
 
+                query += a_proyect + ",";
+                
+                
+                
+                 }
 
-                if (i == 99) {
-                    query += a_proyect;
-                } else {
-                    query += a_proyect + ",";
-                }
-
-
-                /*String a_proyect ="<li id='"+id_user+"'><a hre='#"+id_user+"'></a></li>";
-                 query += a_proyect;*/
 
             }
 
@@ -115,17 +256,12 @@ public class SConfigJson extends HttpServlet {
 
 
             File outputFile = new File(getServletContext().getRealPath("/") + "config.json");
-            //  File outputFile = new File(getServletContext().getRealPath("/") + "li.json");
+
             FileWriter fout = new FileWriter(outputFile);
             fout.write("[" + query + "]");
             fout.close();
 
             System.out.println(outputFile.getAbsolutePath());
-
-
-
-
-
 
 
 

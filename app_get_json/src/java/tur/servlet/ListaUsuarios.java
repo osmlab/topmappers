@@ -16,6 +16,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import tur.bean.User;
 import tur.datasource.BDConnecion;
 import tur.manager.ManagerUser;
 
@@ -23,7 +24,7 @@ import tur.manager.ManagerUser;
  *
  * @author ruben
  */
-public class Slist_allUsers extends HttpServlet {
+public class ListaUsuarios extends HttpServlet {
 
     ManagerUser managerUser = null;
 
@@ -40,56 +41,43 @@ public class Slist_allUsers extends HttpServlet {
         // BRecurso bRecurso = new BRecurso();
         List list_iusers = new LinkedList();
         List list = new LinkedList();
-        List list_all = new LinkedList();
 
 
 
         try {
-            String points = "";
+
             list_iusers = managerUser.list_idUsers();
+            LinkedList linkedList= new LinkedList();
+            // System.out.println("length--" + list_iusers.size());
             for (int i = 0; i < list_iusers.size(); i++) {
 
                 String id_user = list_iusers.get(i) + "";
+                User user = new User();
+                
+                user.setUser_id(Integer.parseInt(id_user));              
+
+                String osm_user = managerUser.find_osm_user(Integer.parseInt(id_user));
+                user.setOsm_user(osm_user);
+                
+                linkedList.add(user);
 
 
-                if (id_user.equals("722137") || id_user.equals("451693")) {
-                    System.out.println("NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo" + id_user);
-
-
-                } else {
-                    list = managerUser.list_User_by_Edicion(Integer.parseInt(id_user));
-                    System.out.println(list.size());
-                    for (int j = 0; j < list.size(); j++) {
-                        System.out.println(list.get(j));
-                        list_all.add(list.get(j));
-                    }
-                }
-
-
-
-                /* if (i == 99) {
-                 points += a_user;
-                 } else {
-                 points += a_user + ",";
-                 }*/
             }
 
-            String a_user = new Gson().toJson(list_all);
+            //user.setEditions(managerUser.list_edition_month(Integer.parseInt(id_user)));
+            //user.setFeatures(managerUser.list_points_edition(Integer.parseInt(id_user)));
+            String json = new Gson().toJson(linkedList);
             response.setContentType("application/json");
             response.setCharacterEncoding("UTF-8");
-
             //write a json file
-            File outputFile = new File(getServletContext().getRealPath("/") + "users.json");
+            File outputFile = new File(getServletContext().getRealPath("/") + "listtop50user.json");
             FileWriter fout = new FileWriter(outputFile);
-            fout.write("{\n"
-                    + "	\"type\": \"FeatureCollection\",\n"
-                    + "	\"features\":" + a_user + "}");
-            /*fout.write("callback({\n"
-             + "	\"type\": \"FeatureCollection\",\n"
-             + "	\"features\":" + json + "})");*/
+
+            fout.write("callback(" + json + ")");
             fout.close();
 
             System.out.println(outputFile.getAbsolutePath());
+
 
 
 

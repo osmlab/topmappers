@@ -61,12 +61,12 @@ BEGIN
         FOR _i IN init..final
         
 		LOOP 	
-		    --RAISE  NOTICE '====================ID=%', _i;
+		    RAISE  NOTICE '====================ID=%', _i;
 			_geom=(select geom from osm_changeset where ogc_fid=_i);
 			_bandera=check_contained(_geom);
 			--RAISE  NOTICE '===========================%', _bandera ;
 			IF (_bandera=false) THEN
-			--RAISE  NOTICE '===========================%', 'Elimina' ;			
+			RAISE  NOTICE '===========================%', 'Elimina' ;			
 				DELETE FROM osm_changeset
 				WHERE ogc_fid=_i;					 				    
 			END IF;				
@@ -81,10 +81,13 @@ $$ LANGUAGE plpgsql;
 select remove_changes(1,100000);
 select remove_changes(100001,200000);
 select remove_changes(200001,400000);
+--------------------
 select remove_changes(400001,600000);
 select remove_changes(600001,800000);
 select remove_changes(800001,1000000);
+-----------------------------
 select remove_changes(1000001,1200000);
+
 select remove_changes(1200001,1400000);
 select remove_changes(1400001,1600000);
 select remove_changes(1600001,1800000);
