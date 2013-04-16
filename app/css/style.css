@@ -69,9 +69,10 @@ Loading
 .subtitle{
   position:absolute;
   z-index: 5;
-  top:35px;
+  top:32px;
   left:22px;
   font-size: 11px;
+  color:#D40038;
 }
 
 
@@ -83,7 +84,7 @@ Loading
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret, 
 .navbar .nav li.dropdown.active > .dropdown-toggle .caret, 
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
- margin-top: 15px;
+ margin-top: 12px;
 }
 
 /*
