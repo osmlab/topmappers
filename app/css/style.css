@@ -59,11 +59,39 @@ Loading
   z-index: 999999;
   position: absolute;
   }
+
+
+.navbar-inner{
+  height:50px;
+}
+
+
+.subtitle{
+  position:absolute;
+  z-index: 5;
+  top:35px;
+  left:22px;
+  font-size: 11px;
+}
+
+
+.nav li {
+    line-height: 30px;
+}
+
+.navbar .nav li.dropdown > .dropdown-toggle .caret,
+.navbar .nav li.dropdown.open > .dropdown-toggle .caret, 
+.navbar .nav li.dropdown.active > .dropdown-toggle .caret, 
+.navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
+ margin-top: 15px;
+}
+
+/*
 .draw{
  position:absolute;
  bottom:-15px;
  right:0px; 
-}
+}*/
 .navbar{
   position:absolute;
   top:0px;
@@ -104,3 +132,5 @@ Loading
   top:48px;
  
 }
+
+
