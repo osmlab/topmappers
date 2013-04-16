@@ -9,8 +9,10 @@
 <body>
     <div class="navbar ">
         <div class="navbar-inner">
-            <a class="brand" href="#">Top 50 mappers in US by number of edits</a>  
-             <p class="subtitle" >OpenStreetMap edits in the US between January 1st 2012 - March 29th 2013</p>          
+            <a class="brand" href="#">Top 50 mappers in US by number of edits</a>
+            <p class="subtitle" >
+                OpenStreetMap edits in the US between January 1st 2012 - March 29th 2013
+            </p>
             <div class="container">
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -18,16 +20,47 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 All edits of top 50 users <b class="fix_caret caret "></b>
                             </a>
-                            <ul  id="userlayers" class="dropdown-menu">
-                                
-                            </ul>
-                        </li>                  
+                            <ul  id="userlayers" class="dropdown-menu"></ul>
+                        </li>
                     </ul>
                 </div>
+                <a href="#popover" id="btn-full-with" role="button" class="btn pull-right" data-toggle="modal">Recursos Turisticos</a>
             </div>
         </div>
     </div>
     <div id="map"  class="loading"></div>
+
+    <div id="popover" class="modal hide fade" tabindex="-1" data-width="760">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4>How to </h4>
+        </div>
+        <div class="modal-body">
+
+            <div class="row">
+
+                <div class="span6">
+                    <h5>1.Carga de Datos a Postgres.</h5>
+                    <p>dfgdfgdfgdf</p>
+
+                </div>
+                <div class="span6">
+                    <h5>2.Filtro de Puntos que pertenecen a US.</h5>
+                    <p>dfd cfgdf</p>
+
+                </div>
+
+                <div class="span6">
+                    <h5>3.Utilizando Proyectmill</h5>
+                    <p>fghfghgfh gfhgfh</p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
     <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.js'></script>
     <script src="http://code.jquery.com/jquery-1.8.0.js"></script>
     <script src="lib/underscore-min.js"></script>
