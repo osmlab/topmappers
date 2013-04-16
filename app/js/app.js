@@ -1,8 +1,10 @@
-/**********************Get Data********************/
+/**********************
+Get Data
+***********************/
 
 function mm_user(callback) {
     if (typeof reqwest === 'undefined') {
-        throw 'CSV: reqwest required for mm_recurso';
+        throw 'CSV: reqwest required ';
     }
     var url = 'http://rub21.github.com/report_top_us/app/listtop50user.json?callback=callback';
     reqwest({
@@ -12,9 +14,7 @@ function mm_user(callback) {
         success: response,
         error: response
     });
-
     function response(x) {
-
         var features = [];
         for (var j = 0; j < x.length; j++) {
             features.push(x[j]);
@@ -23,28 +23,9 @@ function mm_user(callback) {
     }
 };
 
-/*function mm_file_user(file_user, callback) {
-    //alert('mm_edit');
-    if (typeof reqwest === 'undefined') {
-        throw 'CSV: reqwest required for mm_edit';
-    }
-    var url = 'http://rub21.github.com/report_top_us/json_app/' + file_user + '.json?callback=callback';
-    console.log(url);
-    reqwest({
-        url: url,
-        type: 'jsonp',
-        jsonpCallback: 'callback',
-        success: response,
-        error: response
-    });
-
-    function response(x) {
-        // console.log(x);
-        return callback(x);
-    }
-};*/
-
-
+/**********************
+For comma
+***********************/
 function addCommas(nStr) {
     nStr += '';
     x = nStr.split('.');
@@ -57,10 +38,10 @@ function addCommas(nStr) {
     return x1 + x2;
 }
 
-/********************************Map**********************/
+/**********************
+Map
+***********************/
 var map_id = 'ruben.map-5164bfio',
-    features = [],
-    interaction,
     map = mapbox.map('map');
 map.addLayer(mapbox.layer().id(map_id));
 map.centerzoom({
@@ -70,25 +51,8 @@ map.centerzoom({
 
 var list_usser = [];
 
-//inicialiser
 map.addLayer(mapbox.layer().id('ruben.users50', function() {
-    map.interaction.auto();
-    map.interaction.off('on');
     map.interaction.off('off');
-    map.interaction.on({
-        on: function(o) {
-            var mydiv = document.getElementById('interactive');
-            mydiv.style.display = 'block';
-            document.getElementById('osm_user').innerHTML = o.data.osm_user;
-            document.getElementById('edit_at').innerHTML = o.data.closed_at;
-            document.getElementById('num_changes').innerHTML = o.data.num_changes;
-        },
-        off: function(o) {
-            var mydiv = document.getElementById('interactive');
-            mydiv.style.display = 'none';
-        }
-    });
-
 }));
 
 
@@ -97,7 +61,7 @@ map.ui.zoomer.add();
 map.ui.zoombox.add();
 map.ui.hash.add();
 map.ui.attribution.add()
-.content('<a href="http://www.openstreetmap.org/">(c) OpenStreetMap contributors</a>');
+    .content('<a href="http://www.openstreetmap.org/">(c) OpenStreetMap contributors</a>');
 
 
 mm_user(listUser);
@@ -105,23 +69,23 @@ mm_user(listUser);
 function listUser(f) {
 
     list_usser = f;
-    var o = '';
-    for (var i = 0; i < list_usser.length; i++) {
-        /* if (i == 0) {
-            o += '<li  class="active" id="' + list_usser[i].user_id + '"><a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].osm_user + '</a></li>';
 
-        } else {*/
+    var o = '';
+    // var suma=0;
+    o += '<li  id="s50"> <a class="users" href="#"> All Edits</a></li><li class="divider"></li>';
+
+    for (var i = 0; i < list_usser.length; i++) {
+
 
         var num_edit = addCommas(list_usser[i].num_edit);
+
         o += '<li  id="' + list_usser[i].user_id + '">' +
             '<a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].num_post + '. ' + list_usser[i].osm_user + ' (' + num_edit + ' edits)' +
             '</a>' +
             '</li>';
 
-
-
-        /* }*/
     };
+    //alert(suma);
 
     $('#userlayers').append(o);
     $('#map').removeClass('loading');
@@ -133,7 +97,6 @@ $(document).ready(function() {
 
     $('#map').removeClass('loading');
 
-
     $('#userlayers').on('click', 'li', function(e) {
 
         $('#userlayers li').removeClass('active');
@@ -144,43 +107,7 @@ $(document).ready(function() {
         removelayers();
 
         map.addLayer(mapbox.layer().id('ruben.' + mbtiles_id, function() {
-            map.interaction.auto();
-            map.interaction.off('on');
             map.interaction.off('off');
-            map.interaction.on({
-                on: function(o) {
-                    var mydiv = document.getElementById('interactive');
-                    mydiv.style.display = 'block';
-                    document.getElementById('osm_user').innerHTML = o.data.osm_user;
-                    document.getElementById('edit_at').innerHTML = o.data.closed_at;
-                    document.getElementById('num_changes').innerHTML = o.data.num_changes;
-                },
-                off: function(o) {
-                    var mydiv = document.getElementById('interactive');
-                    mydiv.style.display = 'none';
-                }
-            });
-        }));
-
-
-
-        map.addLayer(mapbox.layer().id('ruben.' + mbtiles_id + '_ah', function() {
-            map.interaction.auto();
-            map.interaction.off('on');
-            map.interaction.off('off');
-            map.interaction.on({
-                on: function(o) {
-                    var mydiv = document.getElementById('interactive');
-                    mydiv.style.display = 'block';
-                    document.getElementById('osm_user').innerHTML = o.data.osm_user;
-                    document.getElementById('edit_at').innerHTML = o.data.closed_at;
-                    document.getElementById('num_changes').innerHTML = o.data.num_changes;
-                },
-                off: function(o) {
-                    var mydiv = document.getElementById('interactive');
-                    mydiv.style.display = 'none';
-                }
-            });
         }));
 
         map.interaction.refresh();
