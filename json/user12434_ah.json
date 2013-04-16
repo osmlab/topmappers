@@ -1,3 +1,0 @@
-{
-	"type": "FeatureCollection",
-	"features":[{"geometry":{"type":"Point","coordinates":[-149.72873505,61.45986135]},"properties":{"user_id":12434,"osm_user":"nm7s9","closed_at":"2012-09-14","num_changes":4},"type":"Feature"},{"geometry":{"type":"Point","coordinates":[-149.72902525,61.456894399999996]},"properties":{"user_id":12434,"osm_user":"nm7s9","closed_at":"2012-09-14","num_changes":17},"type":"Feature"}]}

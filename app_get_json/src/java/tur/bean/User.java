@@ -15,10 +15,30 @@ import java.util.ArrayList;
 public class User {
 
    String type= "FeatureCollection";
+   
+    int num_pos;
     int user_id;
-    String osm_user;   
+    String osm_user;
+    int num_edit;  
     ArrayList<Edicions>  editions ;
     ArrayList<Points_edition> features;
+    public int getNum_pos() {
+        return num_pos;
+    }
+
+    public void setNum_pos(int num_pos) {
+        this.num_pos = num_pos;
+    }
+
+    public int getNum_edit() {
+        return num_edit;
+    }
+
+    public void setNum_edit(int num_edit) {
+        this.num_edit = num_edit;
+    }
+
+    
     public int getUser_id() {
         return user_id;
     }

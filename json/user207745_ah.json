@@ -1,3 +1,0 @@
-{
-	"type": "FeatureCollection",
-	"features":[{"geometry":{"type":"Point","coordinates":[-145.6836948,62.5143116]},"properties":{"user_id":207745,"osm_user":"NE2","closed_at":"2012-10-04","num_changes":1830},"type":"Feature"}]}

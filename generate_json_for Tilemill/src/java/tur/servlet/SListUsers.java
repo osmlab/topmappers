@@ -40,133 +40,39 @@ public class SListUsers extends HttpServlet {
         BDConnecion conexion = new BDConnecion(ctx);
         managerUser = new ManagerUser(conexion);
         // BRecurso bRecurso = new BRecurso();
-        //List list_iusers = new LinkedList();
-        ArrayList list_iusers = new ArrayList();
+        //List list_users = new LinkedList();
+
+        List list_users = new LinkedList();
         List list = new LinkedList();
 
 
-
         try {
-            /*list_iusers = managerUser.list_idUsers(); 
-              
-             for (int i = 0; i < list_iusers.size(); i++) {
-                  
-                  
-             String id_user = list_iusers.get(i) + "";
-                
-                
-             list = managerUser.list_User_by_Edicion(Integer.parseInt(id_user));
-             String json = new Gson().toJson(list);
-             response.setContentType("application/json");
-             response.setCharacterEncoding("UTF-8");
-             //write a json file
-             File outputFile = new File(getServletContext().getRealPath("/") + "user" + id_user + ".json");
-             FileWriter fout = new FileWriter(outputFile);
-             fout.write("{\n"
-             + "	\"type\": \"FeatureCollection\",\n"
-             + "	\"features\":" + json + "}");   
-             fout.close();
 
-             System.out.println(outputFile.getAbsolutePath());
-             }*/
+            list_users = managerUser.list_idUsers();
+            for (int i = 0; i < list_users.size(); i++) {
 
+                String id_user = list_users.get(i) + "";
 
-            int[] list_users = {362111, 207745, 153669, 1679, 574654, 416346, 169004, 12434, 239998, 447903, 315015, 38487, 8703, 3392, 374193, 92286, 32952, 542403, 119881};
-            /*int[] list_users = {590362	,
-             475877	,
-             232126	,
-             362111	,
-             78871	,
-             527355	,
-             207745	,
-             93788	,
-             655680	,
-             153669	,
-             502142	,
-             48060	,
-             1679	,
-             574654	,
-             672878	,
-             416346	,
-             169004	,
-             492311	,
-             12434	,
-             55916	,
-             239998	,
-             280679	,
-             447903	,
-             510836	,
-             37392	,
-             315015	,
-             139555	,
-             104962	,
-             121241	,
-             38487	,
-             8703	,
-             3392	,
-             374193	,
-             113450	,
-             92286	,
-             91347	,
-             414318	,
-             22925	,
-             33757	,
-             32952	,
-             542403	,
-             655800	,
-             123633	,
-             119881	,
-             292665	,
-             168517	,
-             84054	,
-             933061	,
-             97431	,
-             14293	
-             };*/
-            String ar = "";
+                if (id_user.equals("722137") || id_user.equals("451693")) {
+                    System.out.println("no files");
+                } else {
+                    list = managerUser.list_User_by_Edicion(Integer.parseInt(id_user));
+                    String json = new Gson().toJson(list);
+                    response.setContentType("application/json");
+                    response.setCharacterEncoding("UTF-8");
+                    //write a json file
+                    File outputFile = new File(getServletContext().getRealPath("/") + "user" + id_user + ".json");
+                    FileWriter fout = new FileWriter(outputFile);
+                    fout.write("{\n"
+                            + "	\"type\": \"FeatureCollection\",\n"
+                            + "	\"features\":" + json + "}");
+                    fout.close();
 
-            for (int i = 0; i < list_users.length; i++) {
-                list_iusers.add(list_users[i]);
-            }
-
-
-
-            for (int i = 0; i < list_iusers.size(); i++) {
-
-
-
-                String id_user = list_iusers.get(i) + "";
-
-
-                list = managerUser.list_User_by_Edicion(Integer.parseInt(id_user));
-
-
-                if (list.size() != 0) {
-
-                    //ar += id_user + ",";
-
-                    
-                    System.out.println("-----------------------------------" + list.size());
-
-                     String json = new Gson().toJson(list);
-                     response.setContentType("application/json");
-                     response.setCharacterEncoding("UTF-8");
-                     //write a json file
-                     //wait(1000);
-                     File outputFile = new File(getServletContext().getRealPath("/") + "user" + id_user + "_us.json");
-                     FileWriter fout = new FileWriter(outputFile);
-                     fout.write("{\n"
-                     + "	\"type\": \"FeatureCollection\",\n"
-                     + "	\"features\":" + json + "}");
-                     fout.close();
-
-                     System.out.println(outputFile.getAbsolutePath());
-
-
+                    System.out.println(outputFile.getAbsolutePath());
                 }
 
-                //System.out.println("----- :  " + ar);
             }
+
 
 
 

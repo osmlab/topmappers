@@ -1,3 +1,0 @@
-{
-	"type": "FeatureCollection",
-	"features":[{"geometry":{"type":"Point","coordinates":[-149.99619660000002,61.1444741]},"properties":{"user_id":32952,"osm_user":"DennisL","closed_at":"2012-09-17","num_changes":37},"type":"Feature"},{"geometry":{"type":"Point","coordinates":[-158.1281679,21.47111245]},"properties":{"user_id":32952,"osm_user":"DennisL","closed_at":"2012-12-06","num_changes":2},"type":"Feature"},{"geometry":{"type":"Point","coordinates":[-158.12974255,21.47016845]},"properties":{"user_id":32952,"osm_user":"DennisL","closed_at":"2012-12-06","num_changes":2},"type":"Feature"},{"geometry":{"type":"Point","coordinates":[-158.1533996,21.3898752]},"properties":{"user_id":32952,"osm_user":"DennisL","closed_at":"2012-12-06","num_changes":13},"type":"Feature"}]}
