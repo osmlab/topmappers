@@ -1,3 +1,63 @@
+/**********************Get Data********************/
+
+function mm_user(callback) {
+    if (typeof reqwest === 'undefined') {
+        throw 'CSV: reqwest required for mm_recurso';
+    }
+    var url = 'http://rub21.github.com/report_top_us/app/listtop50user.json?callback=callback';
+    reqwest({
+        url: url,
+        type: 'jsonp',
+        jsonpCallback: 'callback',
+        success: response,
+        error: response
+    });
+
+    function response(x) {
+
+        var features = [];
+        for (var j = 0; j < x.length; j++) {
+            features.push(x[j]);
+        };
+        return callback(features);
+    }
+};
+
+/*function mm_file_user(file_user, callback) {
+    //alert('mm_edit');
+    if (typeof reqwest === 'undefined') {
+        throw 'CSV: reqwest required for mm_edit';
+    }
+    var url = 'http://rub21.github.com/report_top_us/json_app/' + file_user + '.json?callback=callback';
+    console.log(url);
+    reqwest({
+        url: url,
+        type: 'jsonp',
+        jsonpCallback: 'callback',
+        success: response,
+        error: response
+    });
+
+    function response(x) {
+        // console.log(x);
+        return callback(x);
+    }
+};*/
+
+
+function addCommas(nStr) {
+    nStr += '';
+    x = nStr.split('.');
+    x1 = x[0];
+    x2 = x.length > 1 ? '.' + x[1] : '';
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+    }
+    return x1 + x2;
+}
+
+/********************************Map**********************/
 var map_id = 'ruben.map-5164bfio',
     features = [],
     interaction,
@@ -7,8 +67,6 @@ map.centerzoom({
     lat: 49.46,
     lon: -111.15
 }, 3);
-
-
 
 var list_usser = [];
 
@@ -38,8 +96,7 @@ map.setZoomRange(0, 12);
 map.ui.zoomer.add();
 map.ui.zoombox.add();
 map.ui.hash.add();
-map.ui.attribution.add()
-  .content('<a href="http://www.openstreetmap.org/">(c) OpenStreetMap contributors</a>');
+map.ui.attribution.add().content('<a href="http://www.openstreetmap.org/">(c) OpenStreetMap contributors</a>');
 
 
 mm_user(listUser);
@@ -49,12 +106,20 @@ function listUser(f) {
     list_usser = f;
     var o = '';
     for (var i = 0; i < list_usser.length; i++) {
-       /* if (i == 0) {
+        /* if (i == 0) {
             o += '<li  class="active" id="' + list_usser[i].user_id + '"><a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].osm_user + '</a></li>';
 
         } else {*/
-            o += '<li  id="' + list_usser[i].user_id + '"><a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].osm_user + '</a></li>';
-       /* }*/
+
+        var num_edit = addCommas(list_usser[i].num_edit);
+        o += '<li  id="' + list_usser[i].user_id + '">' +
+            '<a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].num_post + '. ' + list_usser[i].osm_user + ' (' + num_edit + ' edits)' +
+            '</a>' +
+            '</li>';
+
+
+
+        /* }*/
     };
 
     $('#userlayers').append(o);
@@ -62,73 +127,11 @@ function listUser(f) {
 
 
 };
-/*
-google.load("visualization", "1", {
-    packages: ["corechart"]
-});
-
-function stadistis(f) {
-
-    var rowArray = [];
-    var num_edition = 0;
-    for (var i = 0; i < f.editions.length; i++) {
-        rowArray.push([f.editions[i].d, f.editions[i].ne]);
-        num_edition = num_edition + f.editions[i].ne;
-    };
-
-    var title = '';
-    if (f.osm_user === 'All Users') {
-        title = 'Edit by Month from : ' + f.osm_user;
-    } else {
-        title = 'Edit by Month from user : ' + f.osm_user;
-    }
-
-    drawChart();
-
-    function drawChart() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Date');
-        data.addColumn('number', 'Num Editions');
-        data.addRows(rowArray);
-        var chart = new google.visualization.AreaChart(document.getElementById('draw_area'));
-
-        var options = {
-            width: 600,
-            height: 180,
-            title: title,
-            hAxis: {
-                title: 'Date',
-                titleTextStyle: {
-                    color: '#404040'
-                }
-            },
-            vAxis: {
-                title: 'Num Editions',
-                titleTextStyle: {
-                    color: '#404040'
-                }
-            },
-            legend: 'none',
-            chartArea: {
-                left: 25,
-                top: 20,
-                width: "95%",
-                height: "70%"
-            },
-            backgroundColor: 'transparent',
-            colors: ['#B75C30']
-        };
-
-        chart.draw(data, options);
-    }
-    $('.draw').addClass('well');
-}
-*/
 
 $(document).ready(function() {
 
     $('#map').removeClass('loading');
-    //mm_file_user('user722137', stadistis);
+
 
     $('#userlayers').on('click', 'li', function(e) {
 
@@ -223,10 +226,10 @@ $(document).ready(function() {
         if (map.getLayers().length == 2) {
             map.removeLayerAt(1);
         }
-        if (map.getLayers().length == 3) {           
-                map.removeLayerAt(1);
-                map.removeLayerAt(1);
-          
+        if (map.getLayers().length == 3) {
+            map.removeLayerAt(1);
+            map.removeLayerAt(1);
+
         }
     };
 
