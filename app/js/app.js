@@ -51,7 +51,7 @@ map.centerzoom({
 }, 3);
 
 var list_usser = [];
-map.addLayer(mapbox.layer().id('ruben.users50', function() {
+map.addLayer(mapbox.layer().id('ruben.users50_user', function() {
     map.interaction.off('off');
 }));
 map.setZoomRange(3, 6);
