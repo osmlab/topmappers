@@ -72,7 +72,7 @@ function listUser(f) {
 
     var o = '';
     // var suma=0;
-    o += '<li  id="s50"> <a class="users" href="#"> All Edits</a></li><li class="divider"></li>';
+    o += '<li  id="s50" class="active"> <a class="users" href="#"> All Edits</a></li><li class="divider"></li>';
 
     for (var i = 0; i < list_usser.length; i++) {
 
