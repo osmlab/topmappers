@@ -1,201 +1,301 @@
 callback([{
-	
+	"user_id": 722137,
+	"osm_user": "OSMF Redaction Account"
+}, {
+	"user_id": 451693,
+	"osm_user": "bot-mode"
+}, {
 	"user_id": 590362,
 	"osm_user": "mitmas"
 }, {
-	
 	"user_id": 475877,
 	"osm_user": "RoadGeek_MD99"
 }, {
-	
 	"user_id": 232126,
 	"osm_user": "RetiredInNH"
 }, {
-	
 	"user_id": 362111,
 	"osm_user": "Mele Sax-Barnett"
 }, {
-	
 	"user_id": 78871,
 	"osm_user": "ocotillo"
 }, {
-	
 	"user_id": 527355,
 	"osm_user": "RJCorazza"
 }, {
-	
 	"user_id": 207745,
 	"osm_user": "NE2"
 }, {
-	
 	"user_id": 93788,
 	"osm_user": "coleman"
 }, {
-	
 	"user_id": 655680,
 	"osm_user": "MLuna"
 }, {
-	
 	"user_id": 153669,
 	"osm_user": "dchiles"
 }, {
-	
 	"user_id": 502142,
 	"osm_user": "Mulad"
 }, {
-	
 	"user_id": 48060,
 	"osm_user": "Sat"
 }, {
-	
 	"user_id": 1679,
 	"osm_user": "andrewpmk"
 }, {
-	
-	"user_id": 574654,
-	"osm_user": "SDT_420"
-}, {
-	
 	"user_id": 672878,
 	"osm_user": "TexasNHD"
 }, {
-	
 	"user_id": 416346,
 	"osm_user": "Brian@Brea"
 }, {
-	
-	"user_id": 169004,
-	"osm_user": "oldtopos"
-}, {
-	
 	"user_id": 492311,
 	"osm_user": "zacmccormick"
 }, {
-	
+	"user_id": 169004,
+	"osm_user": "oldtopos"
+}, {
 	"user_id": 12434,
 	"osm_user": "nm7s9"
 }, {
-	
 	"user_id": 55916,
 	"osm_user": "maxolasersquad"
 }, {
-	
 	"user_id": 239998,
 	"osm_user": "Sundance"
 }, {
-	
 	"user_id": 280679,
 	"osm_user": "Tom Layo"
 }, {
-	
 	"user_id": 447903,
 	"osm_user": "Glassman"
 }, {
-	
 	"user_id": 510836,
 	"osm_user": "Rub21"
 }, {
-	
 	"user_id": 37392,
 	"osm_user": "25or6to4"
 }, {
-	
 	"user_id": 315015,
 	"osm_user": "WernerP"
 }, {
-	
 	"user_id": 139555,
 	"osm_user": "DavidJDBA"
 }, {
-	
 	"user_id": 104962,
 	"osm_user": "techlady"
 }, {
-	
 	"user_id": 121241,
 	"osm_user": "zephyr"
 }, {
-	
 	"user_id": 38487,
 	"osm_user": "jumbanho"
 }, {
-	
 	"user_id": 8703,
 	"osm_user": "rolandg"
 }, {
-	
-	"user_id": 3392,
-	"osm_user": "SimMoonXP"
-}, {
-	
 	"user_id": 374193,
 	"osm_user": "bal_agates"
 }, {
-	
 	"user_id": 113450,
 	"osm_user": "nfgusedautoparts"
 }, {
-	
+	"user_id": 3392,
+	"osm_user": "SimMoonXP"
+}, {
 	"user_id": 92286,
 	"osm_user": "Paul Johnson"
 }, {
-	
 	"user_id": 91347,
 	"osm_user": "jonathanpatt"
 }, {
-	
 	"user_id": 414318,
 	"osm_user": "Munchabunch"
 }, {
-	
 	"user_id": 22925,
 	"osm_user": "ELadner"
 }, {
-	
 	"user_id": 33757,
 	"osm_user": "Minh Nguyen"
 }, {
-	
 	"user_id": 32952,
 	"osm_user": "DennisL"
 }, {
-	
 	"user_id": 542403,
 	"osm_user": "SD Mapman"
 }, {
-	
 	"user_id": 655800,
 	"osm_user": "hpanno"
 }, {
-	
 	"user_id": 123633,
 	"osm_user": "stevea"
 }, {
-	
-	"user_id": 119881,
-	"osm_user": "Clorox"
-}, {
-	
 	"user_id": 292665,
 	"osm_user": "Dr Kludge"
 }, {
-	
+	"user_id": 119881,
+	"osm_user": "Clorox"
+}, {
 	"user_id": 168517,
 	"osm_user": "Milo"
 }, {
-	
 	"user_id": 84054,
 	"osm_user": "fredjunod"
 }, {
-	
 	"user_id": 933061,
 	"osm_user": "PrometheusAvV"
 }, {
-	
 	"user_id": 97431,
 	"osm_user": "Dion Dock"
 }, {
-	
 	"user_id": 14293,
 	"osm_user": "KindredCoda"
+}, {
+	"user_id": 567034,
+	"osm_user": "Umbugbene"
+}, {
+	"user_id": 617465,
+	"osm_user": "Eraque22"
+}, {
+	"user_id": 157189,
+	"osm_user": "wrk3"
+}, {
+	"user_id": 256900,
+	"osm_user": "probiscus"
+}, {
+	"user_id": 55774,
+	"osm_user": "nmixter"
+}, {
+	"user_id": 54759,
+	"osm_user": "Carl Simonson"
+}, {
+	"user_id": 1149057,
+	"osm_user": "DKNOTT"
+}, {
+	"user_id": 227972,
+	"osm_user": "Your Village Maps"
+}, {
+	"user_id": 429617,
+	"osm_user": "DamienRoz"
+}, {
+	"user_id": 5611,
+	"osm_user": "alexrudd"
+}, {
+	"user_id": 238349,
+	"osm_user": "evil saltine"
+}, {
+	"user_id": 451048,
+	"osm_user": "bbmiller"
+}, {
+	"user_id": 3962,
+	"osm_user": "RussNelson"
+}, {
+	"user_id": 521572,
+	"osm_user": "James Michael DuPont"
+}, {
+	"user_id": 599436,
+	"osm_user": "zeromap"
+}, {
+	"user_id": 26299,
+	"osm_user": "uboot"
+}, {
+	"user_id": 713233,
+	"osm_user": "miqrogroove"
+}, {
+	"user_id": 147322,
+	"osm_user": "JMcA"
+}, {
+	"user_id": 7203,
+	"osm_user": "ToffeHoff"
+}, {
+	"user_id": 326503,
+	"osm_user": "wambag"
+}, {
+	"user_id": 319166,
+	"osm_user": "dezibeljunge"
+}, {
+	"user_id": 247807,
+	"osm_user": "asciiphil"
+}, {
+	"user_id": 343390,
+	"osm_user": "Oleg Shalaev"
+}, {
+	"user_id": 922360,
+	"osm_user": "JMDeMai"
+}, {
+	"user_id": 379381,
+	"osm_user": "mgoe"
+}, {
+	"user_id": 199837,
+	"osm_user": "happy5214"
+}, {
+	"user_id": 10786,
+	"osm_user": "stucki1"
+}, {
+	"user_id": 36121,
+	"osm_user": "Chris Lawrence"
+}, {
+	"user_id": 16591,
+	"osm_user": "neuhausr"
+}, {
+	"user_id": 193314,
+	"osm_user": "mdroads"
+}, {
+	"user_id": 28237,
+	"osm_user": "lyx"
+}, {
+	"user_id": 135163,
+	"osm_user": "MikeN"
+}, {
+	"user_id": 63936,
+	"osm_user": "MojaveNC"
+}, {
+	"user_id": 69864,
+	"osm_user": "Ivan Komarov"
+}, {
+	"user_id": 618879,
+	"osm_user": "van Rees"
+}, {
+	"user_id": 13832,
+	"osm_user": "Peter14"
+}, {
+	"user_id": 242472,
+	"osm_user": "MapCentral"
+}, {
+	"user_id": 1087647,
+	"osm_user": "Phil Scherer"
+}, {
+	"user_id": 681075,
+	"osm_user": "jpmartin1977"
+}, {
+	"user_id": 81676,
+	"osm_user": "Peter Dobratz"
+}, {
+	"user_id": 214969,
+	"osm_user": "AndrewBuck"
+}, {
+	"user_id": 305985,
+	"osm_user": "ingalls"
+}, {
+	"user_id": 396743,
+	"osm_user": "choess"
+}, {
+	"user_id": 365944,
+	"osm_user": "homeslice60148"
+}, {
+	"user_id": 393906,
+	"osm_user": "Grant Humphries"
+}, {
+	"user_id": 105946,
+	"osm_user": "ElliottPlack"
+}, {
+	"user_id": 39504,
+	"osm_user": "malenki"
+}, {
+	"user_id": 103107,
+	"osm_user": "EdHillsman"
+}, {
+	"user_id": 322785,
+	"osm_user": "BCNorwich"
 }])
