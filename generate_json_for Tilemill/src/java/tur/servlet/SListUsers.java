@@ -61,7 +61,7 @@ public class SListUsers extends HttpServlet {
                     response.setContentType("application/json");
                     response.setCharacterEncoding("UTF-8");
                     //write a json file
-                    File outputFile = new File(getServletContext().getRealPath("/") + "user" + id_user + ".json");
+                    File outputFile = new File(getServletContext().getRealPath("/") + "user" + id_user + "_us.json");
                     FileWriter fout = new FileWriter(outputFile);
                     fout.write("{\n"
                             + "	\"type\": \"FeatureCollection\",\n"

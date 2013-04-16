@@ -42,7 +42,7 @@ function addCommas(nStr) {
 /**********************
 Map
 ***********************/
-var map_id = 'ruben.map-5164bfio',
+var map_id = 'ruben.map-kpe91wmi',
     map = mapbox.map('map');
 map.addLayer(mapbox.layer().id(map_id));
 map.centerzoom({
@@ -54,7 +54,7 @@ var list_usser = [];
 map.addLayer(mapbox.layer().id('ruben.users50', function() {
     map.interaction.off('off');
 }));
-map.setZoomRange(0, 12);
+map.setZoomRange(3, 6);
 map.ui.zoomer.add();
 map.ui.zoombox.add();
 map.ui.hash.add();
@@ -86,7 +86,7 @@ $(document).ready(function() {
     $('#userlayers').on('click', 'li', function(e) {
         $('#userlayers li').removeClass('active');
         $('#map').addClass('loading');
-        var mbtiles_id = 'user' + $(this).attr('id');
+        var mbtiles_id = 'user' + $(this).attr('id') +"_us";
         removelayers();
         map.addLayer(mapbox.layer().id('ruben.' + mbtiles_id, function() {
             map.interaction.off('off');

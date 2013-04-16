@@ -22,6 +22,8 @@ public class User {
     int num_edit;  
     ArrayList<Edicions>  editions ;
     ArrayList<Points_edition> features;
+    
+    
     public int getNum_pos() {
         return num_pos;
     }
