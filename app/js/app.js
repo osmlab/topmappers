@@ -46,12 +46,12 @@ function listUser(f) {
     list_usser = f;
     var o = '';
     for (var i = 0; i < list_usser.length; i++) {
-        if (i == 0) {
+       /* if (i == 0) {
             o += '<li  class="active" id="' + list_usser[i].user_id + '"><a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].osm_user + '</a></li>';
 
-        } else {
+        } else {*/
             o += '<li  id="' + list_usser[i].user_id + '"><a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].osm_user + '</a></li>';
-        }
+       /* }*/
     };
 
     $('#userlayers').append(o);
