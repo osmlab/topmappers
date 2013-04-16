@@ -46,7 +46,7 @@ var map_id = 'ruben.map-kpe91wmi',
     map = mapbox.map('map');
 map.addLayer(mapbox.layer().id(map_id));
 map.centerzoom({
-    lat: 41.474/,
+    lat: 41.474,
     lon: -101.034
 }, 5);
 
