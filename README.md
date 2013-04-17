@@ -126,3 +126,9 @@ N°|Mapper|# Changeset since Jan 1st 2012|# Object Changes since Jan 1st 2012
 2|[Bot-mode](http://www.openstreetmap.org/user/Bot-mode)|10761|2680264
 3|[SDT_420 ](http://www.openstreetmap.org/user/SDT_420%20)|2250|373156
 4|[TexasNHD](http://www.openstreetmap.org/user/TexasNHD)|2231|3803965
+5|[pnorman_mechanical](http://www.openstreetmap.org/user/pnorman_mechanical)|43|766031
+6|[slo_osm_imports](http://www.openstreetmap.org/user/slo_osm_imports)|40|443205
+7|[jremillard-massgis](http://www.openstreetmap.org/user/jremillard-massgis)|19|415859
+
+
+
