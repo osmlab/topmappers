@@ -2,11 +2,11 @@ body {
   background-color: #fff;
   font: 14px/20px Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 0; 
-  }
+  padding: 0;
+}
 a {
   color: #036f77;
-  }
+}
 
 /*-----------------------------------
 Map
@@ -14,30 +14,30 @@ Map
 #map {
   background-color: #080d12;
   height: 100%;
-  position:absolute; 
-  top:0px; 
-  width:100%; 
-  }
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
 
-.map-attribution{
-    background-color: rgba(0, 0, 0, 0.8);
-    bottom: 0;
-    color: #333333;
-    font-size: 11px;
-    right: 0;
-    line-height: 20px;
-    padding: 0 5px;
-    position: absolute;
-    text-align: center;
-    z-index: 99999;
-  }
+.map-attribution {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  color: #333333;
+  font-size: 11px;
+  right: 0;
+  line-height: 20px;
+  padding: 0 5px;
+  position: absolute;
+  text-align: center;
+  z-index: 99999;
+}
 
 .title,
 .container.controls {
   float: left;
 }
 
-.subtitle{
+.subtitle {
   color: #777777;
   text-shadow: 0 1px 0 #ffffff;
   clear: left;
@@ -46,36 +46,35 @@ Map
 }
 
 .nav li {
-    line-height: 30px;
+  line-height: 30px;
 }
 
 .navbar .nav li.dropdown > .dropdown-toggle .caret,
-.navbar .nav li.dropdown.open > .dropdown-toggle .caret, 
-.navbar .nav li.dropdown.active > .dropdown-toggle .caret, 
+.navbar .nav li.dropdown.open > .dropdown-toggle .caret,
+.navbar .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
- margin-top: 12px;
+  margin-top: 12px;
 }
 
-.navbar{
-  position:absolute;
-  top:0px;
+.navbar {
+  position: absolute;
+  top: 0px;
   z-index: 12;
-  width:100%;
+  width: 100%;
 }
 
 .navbar .brand {
   padding-top: 14px;
 }
 
-.dropdown-menu{
-  height:600px;
-  max-height:600px;
-  overflow-y:scroll;
+.dropdown-menu {
+  height: 600px;
+  max-height: 600px;
+  overflow-y: scroll;
 }
 
-.zoomer{
-  top:48px;
- 
+.zoomer {
+  top: 48px;
 }
 
 
