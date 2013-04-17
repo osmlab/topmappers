@@ -6,7 +6,11 @@ See http://osmlab.github.io/topmappers/
 Find data processing scripts and TileMill source files in `master` branch.
 
 
-N°|Mapper|Edits since Jan 1st 2012
+### Top 50 mappers by Number of Changesets in U.S.
+
+This ranking corresponds to the number of changesets a mapper has created on OpenStreetMap between January 1st 2012 and March 29th 2013 (often that's just the number of saves). Accounts used for programmatic edits (bots) are not included.
+
+Rank|Mapper|Changesets uploaded 
 ----|----|----|----
 1|[mitmas](http://www.openstreetmap.org/user/mitmas)|8064
 2|[RoadGeek_MD99](http://www.openstreetmap.org/user/RoadGeek_MD99)|7145
@@ -59,11 +63,11 @@ N°|Mapper|Edits since Jan 1st 2012
 49|[Eraque22](http://www.openstreetmap.org/user/Eraque22)|1153
 50|[wrk3](http://www.openstreetmap.org/user/wrk3)|1128
 
+### Top 50 mappers by Number of Objects Modified in U.S.
 
-Top 50 Mappers in US by # of Object changesets
-=======================================
+This ranking corresponds to the total number of objects a mapper has modified on OpenStreetMap between January 1st 2012 and March 29th 2013. Accounts used for programmatic edits (bots) are not included here either.
 
-N°|Mapper|Edits since Jan 1st 2012
+Rank|Mapper|Objects modified
 ----|----|----|----
 1|[chicago-buildings](http://www.openstreetmap.org/user/chicago-buildings)|4884730
 2|[nmixter](http://www.openstreetmap.org/user/nmixter)|2987202
@@ -117,8 +121,7 @@ N°|Mapper|Edits since Jan 1st 2012
 50|[greggerm](http://www.openstreetmap.org/user/greggerm)|283491
 
 
-Bot in the US
-=======================================
+## Accounts only used for programmatic edits (bots)
 
 N°|Mapper|# Changeset since Jan 1st 2012|# Object Changes since Jan 1st 2012
 ----|----|----|----|----|----
