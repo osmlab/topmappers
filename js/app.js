@@ -6,7 +6,7 @@ function mm_user(callback) {
     if (typeof reqwest === 'undefined') {
         throw 'CSV: reqwest required ';
     }
-    var url = 'http://rub21.github.com/report_top_us/app/listtop50user.json?callback=callback';
+    var url = 'http://osmlab.github.io/topmappers/listtop50user.json?callback=callback';
     reqwest({
         url: url,
         type: 'jsonp',
