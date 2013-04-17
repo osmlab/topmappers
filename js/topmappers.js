@@ -1,4 +1,4 @@
-callback([{
+var topmappers = [{
 	"num_post": 1,
 	"user_id": 590362,
 	"osm_user": "mitmas",
@@ -249,4 +249,4 @@ callback([{
 	"osm_user": "wrk3",
 	"num_edit": 1128
 }
-])
+];
