@@ -14,21 +14,15 @@
     }
 
     // Set up map
-    var map_id = 'ruben.map-1pq89o6c',
-        map = mapbox.map('map');
-    map.addLayer(mapbox.layer().id(map_id));
-    map.centerzoom({
-        lat: 41.474,
-        lon: -101.034
-    }, 4);
-    map.addLayer(mapbox.layer().id('ruben.users50_us', function() {
-        map.interaction.off('off');
-    }));
+    var map = mapbox.map('map');
+    map.addLayer(mapbox.layer().id('ruben.map-1pq89o6c,ruben.users50_us'));
+
     map.setZoomRange(3, 6);
     map.ui.zoomer.add();
     map.ui.zoombox.add();
     map.ui.hash.add();
     map.ui.attribution.add().content('<a href="http://www.openstreetmap.org/copyright">(c) OpenStreetMap contributors</a>');
+    map.centerzoom({ lat: 41.474, lon: -101.034 }, 4);
 
     // Set up drop down
     var suma = 0;
@@ -47,14 +41,8 @@
     $('#userlayers').on('click', 'li', function(e) {
         $('#userlayers li').removeClass('active');
         $('.dropdown-toggle').html($(this).text() + '<b class="caret "></b>');
-        var mbtiles_id = 'user' + $(this).attr('id') + "_us";
-        if (map.getLayers().length == 2) {
-            map.removeLayerAt(1);
-        }
-        map.addLayer(mapbox.layer().id('ruben.' + mbtiles_id, function() {
-            map.interaction.off('off');
-        }));
-        map.interaction.refresh();
+        map.removeLayerAt(0);
+        map.addLayer(mapbox.layer().id('ruben.map-1pq89o6c,ruben.user' + $(this).attr('id') + "_us"));
         $(this).addClass('active');
     });
 
