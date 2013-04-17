@@ -46,7 +46,7 @@ map.addLayer(mapbox.layer().id(map_id));
 map.centerzoom({
     lat: 41.474,
     lon: -101.034
-}, 5);
+}, 4);
 
 var list_usser = [];
 map.addLayer(mapbox.layer().id('ruben.users50_us', function() {
