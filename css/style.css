@@ -5,7 +5,7 @@ body {
   padding: 0; 
   }
 a {
-  color: #6bb34a;
+  color: #036f77;
   }
 
 /*-----------------------------------
@@ -20,7 +20,7 @@ Map
   }
 
 .map-attribution{
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.8);
     bottom: 0;
     color: #333333;
     font-size: 11px;
