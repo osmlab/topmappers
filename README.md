@@ -1,5 +1,7 @@
-report_top_us
-=============
+Top Mappers in US by # of Changesets
+====================================
+
+Data processing scripts, map rendering scripts. For web application, see `gh-pages` branch.
 
 source data  http://planet.openstreetmap.org/planet/
 
@@ -14,8 +16,6 @@ cambios realizados en stm.py, con respecto a la fecha y usuario osm
 	python stm.py changesets-latest.osm changesets.sqlite
 
  	create index uid_idx on osm_changeset (user_id);
-
-
 
 ### importar SQLite a Postgres.
 
