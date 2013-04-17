@@ -73,7 +73,7 @@ function listUser(f) {
             '</li>';
     };
 
-    var o_ = '<li  id="s50" class="active"> <a class="users" href="#"> All edits of top 50  (' + addCommas(suma) + '  edits)</a></li><li class="divider"></li>';
+    var o_ = '<li  id="s50" class="active"> <a class="users" href="#"> All mappers  (' + addCommas(suma) + '  edits)</a></li><li class="divider"></li>';
     o = o_ + o;
 
     $('#userlayers').append(o);
