@@ -77,26 +77,21 @@ function listUser(f) {
     o = o_ + o;
 
     $('#userlayers').append(o);
-    $('#map').removeClass('loading');
-
 };
+
 /**********************
 document ready
 ***********************/
 $(document).ready(function() {
-    $('#map').removeClass('loading');
-
     $('#userlayers').on('click', 'li', function(e) {
         $('#userlayers li').removeClass('active');
         $('.dropdown-toggle').html($(this).text() + '<b class="caret "></b>');
-        $('#map').addClass('loading');
         var mbtiles_id = 'user' + $(this).attr('id') + "_us";
         removelayers();
         map.addLayer(mapbox.layer().id('ruben.' + mbtiles_id, function() {
             map.interaction.off('off');
         }));
         map.interaction.refresh();
-        $('#map').removeClass('loading');
         $(this).addClass('active');
     });
 
