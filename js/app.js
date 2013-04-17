@@ -42,7 +42,7 @@ function addCommas(nStr) {
 /**********************
 Map
 ***********************/
-var map_id = 'ruben.map-kpe91wmi',
+var map_id = 'ruben.map-1pq89o6c',
     map = mapbox.map('map');
 map.addLayer(mapbox.layer().id(map_id));
 map.centerzoom({
