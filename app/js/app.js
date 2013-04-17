@@ -64,15 +64,20 @@ mm_user(listUser);
 
 function listUser(f) {
     list_usser = f;
+    var suma = 0
+
     var o = '';
-    o += '<li  id="s50" class="active"> <a class="users" href="#"> All Edits</a></li><li class="divider"></li>';
     for (var i = 0; i < list_usser.length; i++) {
+
+        suma += list_usser[i].num_edit;
         var num_edit = addCommas(list_usser[i].num_edit);
         o += '<li  id="' + list_usser[i].user_id + '">' +
             '<a class="users" href="#' + list_usser[i].osm_user + '">' + list_usser[i].num_post + '. ' + list_usser[i].osm_user + ' (' + num_edit + ' edits)' +
             '</a>' +
             '</li>';
     };
+    var o_ = '<li  id="s50" class="active"> <a class="users" href="#"> All Top 50 Users  (' + addCommas(suma) + '  edits)</a></li><li class="divider"></li>';
+    o = o_ + o;
     $('#userlayers').append(o);
     $('#map').removeClass('loading');
 
@@ -83,15 +88,21 @@ document ready
 $(document).ready(function() {
     $('#map').removeClass('loading');
 
+
     $('#userlayers').on('click', 'li', function(e) {
+
         $('#userlayers li').removeClass('active');
+
+        $('.dropdown-toggle').html($(this).text() + '<b class="caret "></b>');
+
         $('#map').addClass('loading');
-        var mbtiles_id = 'user' + $(this).attr('id') +"_us";
+        var mbtiles_id = 'user' + $(this).attr('id') + "_us";
+
+
         removelayers();
         map.addLayer(mapbox.layer().id('ruben.' + mbtiles_id, function() {
             map.interaction.off('off');
         }));
-
         map.interaction.refresh();
         $('#map').removeClass('loading');
         $(this).addClass('active');
