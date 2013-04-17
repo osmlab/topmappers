@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0; 
   }
+
 /*-----------------------------------
 Map
 -------------------------------------*/
@@ -27,6 +28,7 @@ Map
     text-align: center;
     z-index: 99999;
   }
+
 /*-----------------------------------
 Loading
 -------------------------------------*/
@@ -61,11 +63,9 @@ Loading
   position: absolute;
   }
 
-
 .navbar-inner{
   height:50px;
 }
-
 
 .subtitle{
   position:absolute;
@@ -76,11 +76,9 @@ Loading
   color:#000;
 }
 
-
 .nav li {
     line-height: 30px;
 }
-
 
 .navbar .nav li.dropdown > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret, 
@@ -101,32 +99,6 @@ Loading
   max-height:600px;
   overflow-y:scroll;
 }
-
-/*
-#interactive{
-  display: none;
-  position:absolute;
-  width:180px;
-  height:auto;
-
-  top:48px;
-  right:10px;
-  font-size:12px;
-  z-index:99999;
-  color:#000;    
-  background:#fff;
-}
-
-#interactive.well{
-  padding:10px;
-}
-
-#interactive .span4{
-  width:85px;
-}
-#interactive .left{
-  font-weight: bold;
-}*/
 
 .zoomer{
   top:48px;
