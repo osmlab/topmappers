@@ -79,42 +79,42 @@ N°|Mapper|Edits since Jan 1st 2012
 12|[AndrewBuck](http://www.openstreetmap.org/user/AndrewBuck)|866350
 13|[ELadner](http://www.openstreetmap.org/user/ELadner)|853276
 14|[Mulad](http://www.openstreetmap.org/user/Mulad)|799292
-15|[pnorman_mechanical](http://www.openstreetmap.org/user/pnorman_mechanical)|766031
-16|[Mele Sax-Barnett](http://www.openstreetmap.org/user/Mele%20Sax-Barnett)|761891
-17|[ocotillo](http://www.openstreetmap.org/user/ocotillo)|741068
-18|[Umbugbene](http://www.openstreetmap.org/user/Umbugbene)|709110
-19|[ELadnerImp](http://www.openstreetmap.org/user/ELadnerImp)|704629
-20|[asciiphil](http://www.openstreetmap.org/user/asciiphil)|696341
-21|[zephyr](http://www.openstreetmap.org/user/zephyr)|664195
-22|[Tom Layo](http://www.openstreetmap.org/user/Tom%20Layo)|583062
-23|[Dr Kludge](http://www.openstreetmap.org/user/Dr%20Kludge)|562337
-24|[Minh Nguyen](http://www.openstreetmap.org/user/Minh%20Nguyen)|537884
-25|[Sundance](http://www.openstreetmap.org/user/Sundance)|518982
-26|[techlady](http://www.openstreetmap.org/user/techlady)|468775
-27|[James Michael DuPont](http://www.openstreetmap.org/user/James%20Michael%20DuPont)|464976
-28|[DKNOTT](http://www.openstreetmap.org/user/DKNOTT)|460628
-29|[slo_osm_imports](http://www.openstreetmap.org/user/slo_osm_imports)|443205
-30|[emulsi](http://www.openstreetmap.org/user/emulsi)|438558
-31|[ToeBee](http://www.openstreetmap.org/user/ToeBee)|427947
-32|[grouper](http://www.openstreetmap.org/user/grouper)|423105
-33|[jremillard-massgis](http://www.openstreetmap.org/user/jremillard-massgis)|415859
-34|[chimani](http://www.openstreetmap.org/user/chimani)|408082
-35|[Nick SPW](http://www.openstreetmap.org/user/Nick%20SPW)|383033
-36|[FrozenFlame22](http://www.openstreetmap.org/user/FrozenFlame22)|382220
-37|[Rub21](http://www.openstreetmap.org/user/Rub21)|367418
-38|[ingalls](http://www.openstreetmap.org/user/ingalls)|358618
-39|[mitmas](http://www.openstreetmap.org/user/mitmas)|328309
-40|[TorCguy](http://www.openstreetmap.org/user/TorCguy)|319195
-41|[dufekin](http://www.openstreetmap.org/user/dufekin)|317719
-42|[vtcraghead](http://www.openstreetmap.org/user/vtcraghead)|315846
-43|[RoadGeek_MD99](http://www.openstreetmap.org/user/RoadGeek_MD99)|315509
-44|[stevea](http://www.openstreetmap.org/user/stevea)|314922
-45|[jonathanpatt](http://www.openstreetmap.org/user/jonathanpatt)|314636
-46|[Munchabunch](http://www.openstreetmap.org/user/Munchabunch)|314553
-47|[lyx](http://www.openstreetmap.org/user/lyx)|313959
-48|[hpanno](http://www.openstreetmap.org/user/hpanno)|297216
-49|[Wolfram Sobotta](http://www.openstreetmap.org/user/Wolfram%20Sobotta)|296076
-50|[Grant Humphries](http://www.openstreetmap.org/user/Grant%20Humphries)|295633
+15|[Mele Sax-Barnett](http://www.openstreetmap.org/user/Mele%20Sax-Barnett)|761891
+16|[ocotillo](http://www.openstreetmap.org/user/ocotillo)|741068
+17|[Umbugbene](http://www.openstreetmap.org/user/Umbugbene)|709110
+18|[ELadnerImp](http://www.openstreetmap.org/user/ELadnerImp)|704629
+19|[asciiphil](http://www.openstreetmap.org/user/asciiphil)|696341
+20|[zephyr](http://www.openstreetmap.org/user/zephyr)|664195
+21|[Tom Layo](http://www.openstreetmap.org/user/Tom%20Layo)|583062
+22|[Dr Kludge](http://www.openstreetmap.org/user/Dr%20Kludge)|562337
+23|[Minh Nguyen](http://www.openstreetmap.org/user/Minh%20Nguyen)|537884
+24|[Sundance](http://www.openstreetmap.org/user/Sundance)|518982
+25|[techlady](http://www.openstreetmap.org/user/techlady)|468775
+26|[James Michael DuPont](http://www.openstreetmap.org/user/James%20Michael%20DuPont)|464976
+27|[DKNOTT](http://www.openstreetmap.org/user/DKNOTT)|460628
+28|[emulsi](http://www.openstreetmap.org/user/emulsi)|438558
+29|[ToeBee](http://www.openstreetmap.org/user/ToeBee)|427947
+30|[grouper](http://www.openstreetmap.org/user/grouper)|423105
+31|[chimani](http://www.openstreetmap.org/user/chimani)|408082
+32|[Nick SPW](http://www.openstreetmap.org/user/Nick%20SPW)|383033
+33|[FrozenFlame22](http://www.openstreetmap.org/user/FrozenFlame22)|382220
+34|[Rub21](http://www.openstreetmap.org/user/Rub21)|367418
+35|[ingalls](http://www.openstreetmap.org/user/ingalls)|358618
+36|[mitmas](http://www.openstreetmap.org/user/mitmas)|328309
+37|[TorCguy](http://www.openstreetmap.org/user/TorCguy)|319195
+38|[dufekin](http://www.openstreetmap.org/user/dufekin)|317719
+39|[vtcraghead](http://www.openstreetmap.org/user/vtcraghead)|315846
+40|[RoadGeek_MD99](http://www.openstreetmap.org/user/RoadGeek_MD99)|315509
+41|[stevea](http://www.openstreetmap.org/user/stevea)|314922
+42|[jonathanpatt](http://www.openstreetmap.org/user/jonathanpatt)|314636
+43|[Munchabunch](http://www.openstreetmap.org/user/Munchabunch)|314553
+44|[lyx](http://www.openstreetmap.org/user/lyx)|313959
+45|[hpanno](http://www.openstreetmap.org/user/hpanno)|297216
+46|[Wolfram Sobotta](http://www.openstreetmap.org/user/Wolfram%20Sobotta)|296076
+47|[Grant Humphries](http://www.openstreetmap.org/user/Grant%20Humphries)|295633
+48|[Eraque22](http://www.openstreetmap.org/user/Eraque22)|290143
+49|[Glassman](http://www.openstreetmap.org/user/Glassman)|286345
+50|[greggerm](http://www.openstreetmap.org/user/greggerm)|283491
 
 
 Bot in the US
