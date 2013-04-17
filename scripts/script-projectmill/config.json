@@ -1,0 +1,2916 @@
+[{
+    "source": "mapers",
+    "destination": "user722137_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user722137_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user722137_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user451693_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user451693_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user451693_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user590362_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user590362_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user590362_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user475877_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user475877_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user475877_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user232126_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user232126_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user232126_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user362111_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user362111_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user362111_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user78871_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user78871_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user78871_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user527355_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user527355_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user527355_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user207745_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user207745_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user207745_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user93788_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user93788_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user93788_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user655680_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user655680_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user655680_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user153669_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user153669_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user153669_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user502142_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user502142_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user502142_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user48060_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user48060_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user48060_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user1679_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user1679_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user1679_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user574654_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user574654_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user574654_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user672878_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user672878_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user672878_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user416346_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user416346_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user416346_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user169004_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user169004_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user169004_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user492311_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user492311_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user492311_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user12434_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user12434_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user12434_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user55916_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user55916_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user55916_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user239998_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user239998_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user239998_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user280679_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user280679_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user280679_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user447903_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user447903_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user447903_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user510836_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user510836_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user510836_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user315015_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user315015_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user315015_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user37392_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user37392_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user37392_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user139555_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user139555_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user139555_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user104962_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user104962_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user104962_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user121241_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user121241_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user121241_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user38487_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user38487_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user38487_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user8703_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user8703_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user8703_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user3392_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user3392_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user3392_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user374193_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user374193_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user374193_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user113450_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user113450_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user113450_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user92286_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user92286_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user92286_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user91347_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user91347_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user91347_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user414318_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user414318_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user414318_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user22925_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user22925_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user22925_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user33757_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user33757_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user33757_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user32952_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user32952_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user32952_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user542403_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user542403_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user542403_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user655800_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user655800_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user655800_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user123633_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user123633_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user123633_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user119881_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user119881_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user119881_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user292665_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user292665_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user292665_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user168517_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user168517_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user168517_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user84054_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user84054_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user84054_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user933061_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user933061_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user933061_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user97431_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user97431_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user97431_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user14293_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user14293_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user14293_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user567034_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user567034_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user567034_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user617465_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user617465_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user617465_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+},{
+    "source": "mapers",
+    "destination": "user157189_us",
+    "format": "mbtiles", 
+    "mml": {  "bounds": [
+    -173.3203,
+    18.4796,
+    -66.7969,
+    71.3008
+  ],
+  "center": [
+    -128.3203,
+    53.8525,
+    3
+   ],        "format": "png",
+        "interactivity": {
+            "layer": "user",
+            "template_teaser": "   <h3> <strong>User :</strong>\n        {{{osm_user}}}\n    </h3> \n    <h3> <strong>Edition at :</strong>\n        {{{closed_at}}}\n    </h3> \n    <h3>\n        <strong>Num Changes  :</strong>\n        {{{num_changes}}}\n    </h3>\n ",
+            "fields": [
+                "user_id",
+                "osm_user",
+                "closed_at",
+                "num_changes"]
+        },
+        "minzoom": 3,
+        "maxzoom": 6,
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "Stylesheet": [
+            "style.mss"],
+        "Layer": [{
+            "geometry": "point",
+            "extent": [-108.3869607,
+            25.325613900000004, -80.9186574,
+            36.1901764],
+            "id": "user",
+            "class": "",
+            "Datasource": {
+                "file": "/home/ruben/Dropbox/webpages/report_top_us/json/user157189_us.json"
+            },
+            "srs-name": "WGS84",
+            "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+            "advanced": {},
+            "name": "user"
+        }],
+        "scale": 1,
+        "metatile": 2,
+        "name": "user157189_us",
+        "description": "",
+        "attribution": "",
+        "legend": ""
+    },
+    "cartoVars": {},
+    "MBmeta": {}
+}]
