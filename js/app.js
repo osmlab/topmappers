@@ -1,7 +1,6 @@
 /**********************
 Get Data
 ***********************/
-
 function mm_user(callback) {
     if (typeof reqwest === 'undefined') {
         throw 'CSV: reqwest required ';
@@ -23,7 +22,6 @@ function mm_user(callback) {
         return callback(features);
     }
 };
-
 /**********************
 For comma
 ***********************/
@@ -59,16 +57,14 @@ map.ui.zoomer.add();
 map.ui.zoombox.add();
 map.ui.hash.add();
 map.ui.attribution.add().content('<a href="http://www.openstreetmap.org/copyright">(c) OpenStreetMap contributors</a>');
-
 mm_user(listUser);
 
 function listUser(f) {
     list_usser = f;
     var suma = 0
-
     var o = '';
-    for (var i = 0; i < list_usser.length; i++) {
 
+    for (var i = 0; i < list_usser.length; i++) {
         suma += list_usser[i].num_edit;
         var num_edit = addCommas(list_usser[i].num_edit);
         o += '<li  id="' + list_usser[i].user_id + '">' +
@@ -76,8 +72,10 @@ function listUser(f) {
             '</a>' +
             '</li>';
     };
+
     var o_ = '<li  id="s50" class="active"> <a class="users" href="#"> All edits of top 50  (' + addCommas(suma) + '  edits)</a></li><li class="divider"></li>';
     o = o_ + o;
+
     $('#userlayers').append(o);
     $('#map').removeClass('loading');
 
@@ -88,17 +86,11 @@ document ready
 $(document).ready(function() {
     $('#map').removeClass('loading');
 
-
     $('#userlayers').on('click', 'li', function(e) {
-
         $('#userlayers li').removeClass('active');
-
         $('.dropdown-toggle').html($(this).text() + '<b class="caret "></b>');
-
         $('#map').addClass('loading');
         var mbtiles_id = 'user' + $(this).attr('id') + "_us";
-
-
         removelayers();
         map.addLayer(mapbox.layer().id('ruben.' + mbtiles_id, function() {
             map.interaction.off('off');
