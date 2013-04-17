@@ -63,17 +63,17 @@ Loading
   position: absolute;
   }
 
-.navbar-inner{
-  height:50px;
+.title,
+.container.controls {
+  float: left;
 }
 
 .subtitle{
-  position:absolute;
+  color: #777777;
+  text-shadow: 0 1px 0 #ffffff;
+  clear: left;
   z-index: 5;
-  top:32px;
-  left:22px;
   font-size: 11px;
-  color:#000;
 }
 
 .nav li {
@@ -92,6 +92,10 @@ Loading
   top:0px;
   z-index: 12;
   width:100%;
+}
+
+.navbar .brand {
+  padding-top: 14px;
 }
 
 .dropdown-menu{
