@@ -58,7 +58,7 @@ map.setZoomRange(3, 6);
 map.ui.zoomer.add();
 map.ui.zoombox.add();
 map.ui.hash.add();
-map.ui.attribution.add().content('<a href="http://www.openstreetmap.org/">(c) OpenStreetMap contributors</a>');
+map.ui.attribution.add().content('<a href="http://www.openstreetmap.org/copyright">(c) OpenStreetMap contributors</a>');
 
 mm_user(listUser);
 
