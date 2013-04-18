@@ -247,6 +247,6 @@ var topmappers = [{
 	"num_post": 50,
 	"user_id": 617465,
 	"osm_user": "Eraque22",
-	"num_edit": 1153 37392
+	"num_edit": 1153
 }
 ];
