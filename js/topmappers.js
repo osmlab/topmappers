@@ -110,143 +110,143 @@ var topmappers = [{
 	"num_edit": 1874
 }, {
 	"num_post": 23,
+	"user_id": 37392,
+	"osm_user": "25or6to4",
+	"num_edit": 1798
+}, {
+	"num_post": 24,
 	"user_id": 315015,
 	"osm_user": "WernerP",
 	"num_edit": 1798
 }, {
-	"num_post": 24,
+	"num_post": 25,
 	"user_id": 139555,
 	"osm_user": "DavidJDBA",
 	"num_edit": 1779
 }, {
-	"num_post": 25,
+	"num_post": 26,
 	"user_id": 104962,
 	"osm_user": "techlady",
 	"num_edit": 1749
 }, {
-	"num_post": 26,
+	"num_post": 27,
 	"user_id": 121241,
 	"osm_user": "zephyr",
 	"num_edit": 1636
 }, {
-	"num_post": 27,
+	"num_post": 28,
 	"user_id": 38487,
 	"osm_user": "jumbanho",
 	"num_edit": 1620
 }, {
-	"num_post": 28,
+	"num_post": 29,
 	"user_id": 8703,
 	"osm_user": "rolandg",
 	"num_edit": 1612
 }, {
-	"num_post": 29,
+	"num_post": 30,
 	"user_id": 3392,
 	"osm_user": "SimMoonXP",
 	"num_edit": 1601
 }, {
-	"num_post": 30,
+	"num_post": 31,
 	"user_id": 374193,
 	"osm_user": "bal_agates",
 	"num_edit": 1571
 }, {
-	"num_post": 31,
+	"num_post": 32,
 	"user_id": 113450,
 	"osm_user": "nfgusedautoparts",
 	"num_edit": 1559
 }, {
-	"num_post": 32,
+	"num_post": 33,
 	"user_id": 92286,
 	"osm_user": "Paul Johnson",
 	"num_edit": 1525
 }, {
-	"num_post": 33,
+	"num_post": 34,
 	"user_id": 91347,
 	"osm_user": "jonathanpatt",
 	"num_edit": 1474
 }, {
-	"num_post": 34,
+	"num_post": 35,
 	"user_id": 414318,
 	"osm_user": "Munchabunch",
 	"num_edit": 1472
 }, {
-	"num_post": 35,
+	"num_post": 36,
 	"user_id": 22925,
 	"osm_user": "ELadner",
 	"num_edit": 1402
 }, {
-	"num_post": 36,
+	"num_post": 37,
 	"user_id": 33757,
 	"osm_user": "Minh Nguyen",
 	"num_edit": 1393
 }, {
-	"num_post": 37,
+	"num_post": 38,
 	"user_id": 32952,
 	"osm_user": "DennisL",
 	"num_edit": 1366
 }, {
-	"num_post": 38,
+	"num_post": 39,
 	"user_id": 542403,
 	"osm_user": "SD Mapman",
 	"num_edit": 1325
 }, {
-	"num_post": 39,
+	"num_post": 40,
 	"user_id": 655800,
 	"osm_user": "hpanno",
 	"num_edit": 1286
 }, {
-	"num_post": 40,
+	"num_post": 41,
 	"user_id": 123633,
 	"osm_user": "stevea",
 	"num_edit": 1258
 }, {
-	"num_post": 41,
+	"num_post": 42,
 	"user_id": 119881,
 	"osm_user": "Clorox",
 	"num_edit": 1239
 }, {
-	"num_post": 42,
+	"num_post": 43,
 	"user_id": 292665,
 	"osm_user": "Dr Kludge",
 	"num_edit": 1230
 }, {
-	"num_post": 43,
+	"num_post": 44,
 	"user_id": 168517,
 	"osm_user": "Milo",
 	"num_edit": 1226
 }, {
-	"num_post": 44,
+	"num_post": 45,
 	"user_id": 84054,
 	"osm_user": "fredjunod",
 	"num_edit": 1222
 }, {
-	"num_post": 45,
+	"num_post": 46,
 	"user_id": 933061,
 	"osm_user": "PrometheusAvV",
 	"num_edit": 1220
 }, {
-	"num_post": 46,
+	"num_post": 47,
 	"user_id": 97431,
 	"osm_user": "Dion Dock",
 	"num_edit": 1200
 }, {
-	"num_post": 47,
+	"num_post": 48,
 	"user_id": 14293,
 	"osm_user": "KindredCoda",
 	"num_edit": 1198
 }, {
-	"num_post": 48,
+	"num_post": 49,
 	"user_id": 567034,
 	"osm_user": "Umbugbene",
 	"num_edit": 1174
 }, {
-	"num_post": 49,
+	"num_post": 50,
 	"user_id": 617465,
 	"osm_user": "Eraque22",
-	"num_edit": 1153
-} ,{
-	"num_post": 50,
-	"user_id": 157189,
-	"osm_user": "wrk3",
-	"num_edit": 1128
+	"num_edit": 1153 37392
 }
 ];
