@@ -120,9 +120,88 @@ Rank|Mapper|Objects modified
 49|[Glassman](http://www.openstreetmap.org/user/Glassman)|286345
 50|[greggerm](http://www.openstreetmap.org/user/greggerm)|283491
 
+### All Top Mappers in Chronological Order
 
-Bot in the US
-=======================================
+This is a list of all mappers who are either in the top 50 by changesets or in the top 50 by
+objects modified list. 
+
+- [25or6to4](http://www.openstreetmap.org/user/25or6to4)
+- [AndrewBuck](http://www.openstreetmap.org/user/AndrewBuck)
+- [andrewpmk](http://www.openstreetmap.org/user/andrewpmk)
+- [asciiphil](http://www.openstreetmap.org/user/asciiphil)
+- [bal_agates](http://www.openstreetmap.org/user/bal_agates)
+- [Brian@Brea](http://www.openstreetmap.org/user/Brian@Brea)
+- [chimani](http://www.openstreetmap.org/user/chimani)
+- [Clorox](http://www.openstreetmap.org/user/Clorox)
+- [coleman](http://www.openstreetmap.org/user/coleman)
+- [DavidJDBA](http://www.openstreetmap.org/user/DavidJDBA)
+- [dchiles](http://www.openstreetmap.org/user/dchiles)
+- [DennisL](http://www.openstreetmap.org/user/DennisL)
+- [Dion Dock](http://www.openstreetmap.org/user/Dion%20Dock)
+- [DKNOTT](http://www.openstreetmap.org/user/DKNOTT)
+- [Dr Kludge](http://www.openstreetmap.org/user/Dr%20Kludge)
+- [dufekin](http://www.openstreetmap.org/user/dufekin)
+- [ELadner](http://www.openstreetmap.org/user/ELadner)
+- [ELadnerImp](http://www.openstreetmap.org/user/ELadnerImp)
+- [emulsi](http://www.openstreetmap.org/user/emulsi)
+- [Eraque22](http://www.openstreetmap.org/user/Eraque22)
+- [Eureka gold](http://www.openstreetmap.org/user/Eureka%20gold)
+- [fredjunod](http://www.openstreetmap.org/user/fredjunod)
+- [FrozenFlame22](http://www.openstreetmap.org/user/FrozenFlame22)
+- [Glassman](http://www.openstreetmap.org/user/Glassman)
+- [Grant Humphries](http://www.openstreetmap.org/user/Grant%20Humphries)
+- [greggerm](http://www.openstreetmap.org/user/greggerm)
+- [grouper](http://www.openstreetmap.org/user/grouper)
+- [hpanno](http://www.openstreetmap.org/user/hpanno)
+- [ingalls](http://www.openstreetmap.org/user/ingalls)
+- [jam3son](http://www.openstreetmap.org/user/jam3son)
+- [James Michael DuPont](http://www.openstreetmap.org/user/James%20Michael%20DuPont)
+- [jonathanpatt](http://www.openstreetmap.org/user/jonathanpatt)
+- [jumbanho](http://www.openstreetmap.org/user/jumbanho)
+- [KindredCoda](http://www.openstreetmap.org/user/KindredCoda)
+- [lyx](http://www.openstreetmap.org/user/lyx)
+- [maxolasersquad](http://www.openstreetmap.org/user/maxolasersquad)
+- [Mele Sax-Barnett](http://www.openstreetmap.org/user/Mele%20Sax-Barnett)
+- [Milo](http://www.openstreetmap.org/user/Milo)
+- [Minh Nguyen](http://www.openstreetmap.org/user/Minh%20Nguyen)
+- [mitmas](http://www.openstreetmap.org/user/mitmas)
+- [MLuna](http://www.openstreetmap.org/user/MLuna)
+- [Mulad](http://www.openstreetmap.org/user/Mulad)
+- [Munchabunch](http://www.openstreetmap.org/user/Munchabunch)
+- [NE2](http://www.openstreetmap.org/user/NE2)
+- [nfgusedautoparts](http://www.openstreetmap.org/user/nfgusedautoparts)
+- [Nick SPW](http://www.openstreetmap.org/user/Nick%20SPW)
+- [nm7s9](http://www.openstreetmap.org/user/nm7s9)
+- [nmixter](http://www.openstreetmap.org/user/nmixter)
+- [ocotillo](http://www.openstreetmap.org/user/ocotillo)
+- [oldtopos](http://www.openstreetmap.org/user/oldtopos)
+- [Paul Johnson](http://www.openstreetmap.org/user/Paul%20Johnson)
+- [PrometheusAvV](http://www.openstreetmap.org/user/PrometheusAvV)
+- [RetiredInNH](http://www.openstreetmap.org/user/RetiredInNH)
+- [RJCorazza](http://www.openstreetmap.org/user/RJCorazza)
+- [RoadGeek_MD99](http://www.openstreetmap.org/user/RoadGeek_MD99)
+- [rolandg](http://www.openstreetmap.org/user/rolandg)
+- [Rub21](http://www.openstreetmap.org/user/Rub21)
+- [Sat](http://www.openstreetmap.org/user/Sat)
+- [SD Mapman](http://www.openstreetmap.org/user/SD%20Mapman)
+- [SimMoonXP](http://www.openstreetmap.org/user/SimMoonXP)
+- [stevea](http://www.openstreetmap.org/user/stevea)
+- [Sundance](http://www.openstreetmap.org/user/Sundance)
+- [techlady](http://www.openstreetmap.org/user/techlady)
+- [ToeBee](http://www.openstreetmap.org/user/ToeBee)
+- [Tom Layo](http://www.openstreetmap.org/user/Tom%20Layo)
+- [TorCguy](http://www.openstreetmap.org/user/TorCguy)
+- [Umbugbene](http://www.openstreetmap.org/user/Umbugbene)
+- [vtcraghead](http://www.openstreetmap.org/user/vtcraghead)
+- [WernerP](http://www.openstreetmap.org/user/WernerP)
+- [Wolfram Sobotta](http://www.openstreetmap.org/user/Wolfram%20Sobotta)
+- [Your Village Maps](http://www.openstreetmap.org/user/Your%20Village%20Maps)
+- [zacmccormick](http://www.openstreetmap.org/user/zacmccormick)
+- [zephyr](http://www.openstreetmap.org/user/zephyr)
+
+### Bots
+
+List of accounts that have been identified as exclusively used for mechanical edits.
 
 N°|Mapper|# Changeset since Jan 1st 2012|# Object Changes since Jan 1st 2012
 ----|----|----|----|----|----
